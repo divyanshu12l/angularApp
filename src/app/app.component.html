@@ -1,0 +1,102 @@
+<style>
+  .header_change{
+    background-color: black;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.212);
+  }
+  .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black"   data-aos="fade-down" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid" width="50" src="./assets/Code.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/About" routerLinkActive="active" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/News" routerLinkActive="active" href="#">News</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menu" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <!-- <span class="caret"></span> -->
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li class=" dropdown-submenu">
+              <a class="nav-item" style="color: black; white-space: nowrap; text-decoration: none;" tabindex="-1" href="#">Performance Analysis</a>
+              <ul class="nav-item dropdown-menu">
+                <li><a  routerLink="/expert-analysis" routerLinkActive="active" class="nav-link" style="color: black;white-space: nowrap;" tabindex="-1"href="">Expert Analysis</a></li>
+                <li><a  routerLink="/real-time-match-analysis" routerLinkActive="active" class="nav-link" style="color: black;white-space: nowrap;" tabindex="-1"href="#">Real Time Match Analysis</a></li>
+                <li><a  routerLink="/real-time-practise-analysis" routerLinkActive="active" class="nav-link" style="color: black;white-space: nowrap;" tabindex="-1"href="#">Real Time Practise Analysis</a></li>
+                </ul>
+                </li>
+            <li><a  routerLink="/athelete-profiling" routerLinkActive="active" class="dropdown-item" href="#">Athlete Profiling</a></li>
+            <li><a  routerLink="/broadcast-creative-media" routerLinkActive="active" class="dropdown-item" href="#">Creative Media </a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" routerLink="/Contact" routerLinkActive="active" tabindex="-1" aria-disabled="true">Contact Us</a>
+        </li>
+      </ul>
+        <button [class.mybot]= "header_variable" class="btn btn-outline-success" type="submit">Search</button>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

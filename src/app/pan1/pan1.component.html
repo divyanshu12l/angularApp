@@ -1,0 +1,184 @@
+<style>
+    .display_flex {
+        display: flex;
+    }
+
+    .bg_img {
+        background-image: url("/assets/testimonials-bg.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100vw;
+        margin: 0;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+        padding: 0;
+        background-position: 50%;
+        height: 100vh;
+    }
+
+    .bg_transparent {
+        background-color: rgba(0, 0, 0, 0.315);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #text-start {
+        padding-top: 15%;
+        color: white;
+
+    }
+
+    .bigFont {
+        font-size: 50px;
+        border-radius: 50%;
+        font-family: 'Play', sans-serif;
+    }
+
+    .smallFont {
+        font-size: large;
+        /* font-family: 'Play', sans-serif; */
+    }
+
+    .sign-in {
+        position: relative;
+        color: white;
+        /* border: 1px solid rgba(255, 255, 255, 0.479); */
+        /* width: 100%; */
+        min-width: 28vw;
+        max-height: 68vh;
+        font-family: 'DM Sans', sans-serif;
+        margin-left: 40%;
+        font-weight: 600;
+        border-top: 4px solid white;
+        padding: 5%;
+        padding-bottom: 10%;
+        /* height: auto; */
+        /* border-radius: 30px; */
+
+        background-color: rgba(32, 24, 75, 0.829);
+
+    }
+
+    #box1 {
+        margin-top: 10%;
+        
+        background-color: rgba(32, 24, 75, 0.829);
+         /* box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.712);;  */
+        color: white;
+        padding: 2%;
+        font-family: 'DM Sans', sans-serif;
+        border-top: 4px solid rgba(150, 150, 150, 0.753);
+
+    }
+
+    h4 {
+        /* border-bottom: 3px solid rgba(255, 255, 255, 0.322); */
+        padding: 8% 0 1% 0;
+        border-bottom: 3px solid rgb(151, 151, 151);
+        width: 120px;
+
+        font-family: 'Baloo 2', cursive;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        /* background-color:black; */
+        margin: 0;
+    }
+
+    .text-center {
+        margin-left: 30%;
+    }
+
+    /* .sign-in img{
+        border-radius: 50%;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+    } */
+    .signInForm {
+        margin-top: 30px;
+    }
+
+    input {
+        background-color: rgba(158, 158, 158, 0.404);
+        text-decoration: none;
+        border: none;
+        border-radius: 50px;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 50px;
+        background-color: white;
+    }
+
+    #signIn {
+        background-color: rgba(32, 24, 75, 0.829);
+        color: white;
+        padding: 2%;
+        font-family: 'DM Sans', sans-serif;
+        border-top: 4px solid white;
+    }
+
+    @media screen and (max-width:980px) {
+        .bg_img{
+            height: 110vh;
+        }
+    }
+    @media screen and (max-width:450px) {
+        .bg_img{
+            height: 100vh;
+        }
+    }
+</style>
+
+<div class="bg_img">
+    <div class="bg_transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" id="text-start" data-aos="zoom-out" data-aos-duration="1000">
+                    <h1 class="bigFont">Python Programming</h1>
+                    <p class="smallFont">My Own Website For Programming</p>
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            <a href="/"><img src="./assets/appstore.png" width="200" data-aos="zoom-in"></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="" width="100">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4" id="box1" data-aos="fade-left"  data-aos-duration="2000">
+                    <div class=" pt-1">
+                      
+                        <h4 class="text-center">SIGN IN</h4>
+                        <div class="container">
+                            <form class="signInForm" #SignIn="ngForm" (ngSubmit)="Input(SignIn.value)">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" ngModel class="form-label">Email address</label>
+                                    <input name="email" type="email" ngModel class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1"  class="form-label">Password</label>
+                                    <input type="password" name="password" ngModel class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox"  ngModel class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label"  for="exampleCheck1">Remember me</label>
+                                </div>
+                                <button type="Submit" class="btn d-block mx-auto ml-auto ">Submit</button>
+                            </form>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<app-pan2></app-pan2>
+<router-outlet></router-outlet>

@@ -1,0 +1,64 @@
+<style>
+  .container {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .card {
+    /* border: 2px solid ; */
+    border-radius: 15px;
+    overflow: hidden;
+    min-height:50vh ;
+  }
+  #heading{
+    font-family: 'Play', sans-serif;
+  }
+</style>
+
+<div class="container">
+  <div class="text-center mb-5" id="heading">
+    <h2>World Ranked Players<br>
+      Using <b style="color:#1e2d40 ;">Stupa Sports Analytics</b></h2>
+  </div>
+
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+
+      <div class="card me-3">
+        <img src="./assets/manav.jpg" width="100"  class="card-img-top">
+        <h4 class="text-center">Manav Thakkar</h4>
+        <p class="card-text text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+        </p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="card me-3">
+        <img class="card-img-top" src="./assets/kanak.jpg" width=50 >
+        <h4 class="text-center">Kanak Jha</h4>
+        <p class="card-text text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+        </p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="card me-3">
+        <img src="./assets/adriana.jpg" width="100"  class=" card-img-top">
+        <h4 class="text-center">Adriana Diaz</h4>
+        <p class="card-text text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+        </p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="card me-3">
+        <img src="./assets/payas.jpg" width="100">
+        <h4 class="text-center">Payas Jain</h4>
+        <p class="card-text text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+        </p>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
+<app-pan5></app-pan5>

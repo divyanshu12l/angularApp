@@ -1,0 +1,174 @@
+<style>
+    #container-about-1 {
+        margin-top: 15vh;
+
+
+    }
+    #FirstHeading {
+        font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-top: 15vh;
+        /* overflow: hidden;
+
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite; */
+}
+    /* @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} */
+    .imageLogo {
+        border-radius: 50%;
+
+    }
+    .slider{
+        overflow: hidden;
+        color: rgb(161, 157, 157);
+        /* background-color: black; */
+        background-image: url('./assets/founderBG.jpg');
+        background-position: center;
+
+    }
+    .typewriter{
+        white-space: nowrap;
+    }
+    .typewriter p{
+  color: #fff;
+  overflow: hidden;
+  color: black;
+  /* white-space: nowrap; */
+
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 5vh;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(80, end), blink-caret .20s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+    img {
+        text-align: center;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        justify-content: center;
+        align-content: center;
+    max-width: 200px;  
+    height: 200px!important; 
+    margin-bottom: 30px;
+    }
+    .info{
+        width: 70vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-button{
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  background-color: yellow;
+  top: 100px !important;
+}
+.nav-button .owl-prev.disabled,
+.nav-button .owl-next.disabled{
+pointer-events: none;
+opacity: 0.2;
+}
+
+.nav-button .prev-slide{
+  background: url(nav-icon.png) no-repeat scroll 0 0;
+  left: -33px;
+}
+.nav-button .next-slide{
+  background: url(nav-icon.png) no-repeat scroll -24px 0px;
+  right: -33px;
+}
+.nav-button .prev-slide:hover{
+ background-position: 0px -53px;
+}
+.nav-button .next-slide:hover{
+background-position: -24px -53px;
+}
+.bg_gradient{
+    background-color: rgba(0, 0, 0, 0.603);
+}
+</style>
+<!-- <div class="container" id="container-about-1"> -->
+    <div class="heading">
+        <h1 class="text-center p-4" data-aos="fade-up" data-aos-duration="1000" id="FirstHeading"><b>FOUNDERS</b></h1>
+        <div class="typewriter">
+        <p class="text-center " id="typewriterist"><b>THE CREATIVE POWER BEHIND HYPELANE
+        </b></p>
+    </div>
+    </div>
+    <div class="slider">
+        <div class="bg_gradient">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+
+           
+            <div class="flexbox mt-2 " id="flexbox2">
+                <div class="row p-3 text-center d-block mx-auto ml-auto">
+                    <div class="imgLogo d-block mx-auto ml-auto img-fluid" id="imgLogo1">
+                        <img src="./assets/team_1.jpg" alt="" >
+
+                    </div>
+                    <div class="superhead mt-1">
+                        <h4>Megha Gambhir</h4>
+                    </div>
+                    <div class="info mt-2">
+                        <h6>A seasoned technologist and sports
+                             enthusiast having industry experience 
+                             of 13 years. Worked with renowned clients
+                              like World Bank & United Nation while
+                               working with EY and Pepsico India and
+                                Amex through Cognizant Technologies.</h6>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+
+            <div class="flexbox mt-2 " id="flexbox2">
+                <div class="row p-3 text-center d-block mx-auto ml-auto">
+                    <div class="imgLogo d-block mx-auto ml-auto img-fluid" id="imgLogo2">
+                        <img src="./assets/team_2.jpg" alt="" >
+
+                    </div>
+                    <div class="superhead mt-1">
+                        <h4>Deepak Malik</h4>
+                    </div>
+                    <div class="info mt-2 ">
+                        <h6>Deepak Malik, the National coach
+                             for Indian Table Tennis team co-founded
+                              STUPA. The former national player with
+                               20 years of experience in Table Tennis.
+                                He has nourished the product with domain
+                                 expertise, providing the insights on Table
+                                  Tennis data and analysis.</h6>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+</div>
+
+
+<!-- teck freaks -->
+
+
+<!-- </div> -->
