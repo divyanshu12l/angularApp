@@ -1,10 +1,11 @@
+<!-- header home-1 -->
 <style>
     .display_flex {
         display: flex;
     }
 
     .bg_img {
-        background-image: url("/assets/testimonials-bg.jpg");
+        background-image: url("/assets/extraheadbg.png");
         background-size: cover;
         background-attachment: fixed;
         width: 100vw;
@@ -35,14 +36,11 @@
 
     .smallFont {
         font-size: large;
-        /* font-family: 'Play', sans-serif; */
     }
 
     .sign-in {
         position: relative;
         color: white;
-        /* border: 1px solid rgba(255, 255, 255, 0.479); */
-        /* width: 100%; */
         min-width: 28vw;
         max-height: 68vh;
         font-family: 'DM Sans', sans-serif;
@@ -51,37 +49,24 @@
         border-top: 4px solid white;
         padding: 2%;
         padding-bottom: 10%;
-        /* height: auto; */
-        /* border-radius: 30px; */
-
         background-color: rgba(32, 24, 75, 0.829);
 
     }
 
     #box1 {
         margin-top: 10%;
-        
-        background-color:rgba(0, 0, 0, 0.788);
-         /* box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.712);;  */
+
+        background-color: rgba(0, 0, 0, 0.788);
         color: white;
         box-shadow: 8px 8px 20px 20px hsla(0, 0%, 10%, 0.582);
         padding: 1%;
-        /* max-width: 60vw; */
         font-family: 'DM Sans', sans-serif;
         border-top: 2px solid white;
 
     }
 
     h4 {
-        /* border-bottom: 3px solid rgba(255, 255, 255, 0.322); */
-        /* padding: 5% 0 0% 0; */
-        /* border-bottom: 3px solid rgb(151, 151, 151); */
-        /* width: 120px; */
-
         font-family: 'Baloo 2', cursive;
-        /* border-top-left-radius: 30px;
-        border-top-right-radius: 30px; */
-        /* background-color:black; */
         margin-top: 4%;
     }
 
@@ -90,13 +75,6 @@
         padding-top: 3%;
     }
 
-    /* .sign-in img{
-        border-radius: 50%;
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-    } */
     .signInForm {
         margin-top: 30px;
     }
@@ -109,14 +87,15 @@
         width: 100%;
         border-radius: 50px;
     }
-    input{
+
+    input {
         background-color: rgba(158, 158, 158, 0.404);
         border-radius: 50px;
         border: none;
 
     }
 
-    .input-group-text{
+    .input-group-text {
         background-color: rgba(158, 158, 158, 0.404);
         border-radius: 50px;
         border: none;
@@ -133,7 +112,6 @@
     }
 
     #signIn {
-        /* background-color: rgba(32, 24, 75, 0.829); */
         color: white;
         padding: 2%;
         font-family: 'DM Sans', sans-serif;
@@ -141,12 +119,13 @@
     }
 
     @media screen and (max-width:980px) {
-        .bg_img{
+        .bg_img {
             height: 110vh;
         }
     }
+
     @media screen and (max-width:450px) {
-        .bg_img{
+        .bg_img {
             height: 100vh;
         }
     }
@@ -157,7 +136,7 @@
         <div class="container" id="container-1">
             <div class="row">
                 <div class="col-lg-8" id="text-start" data-aos="zoom-out" data-aos-duration="1000">
-                    <h1 class="bigFont">Python Programming</h1>
+                    <h1 class="bigFont">STUPA<br>Sports Analytics</h1>
                     <p class="smallFont">My Own Website For Programming</p>
                     <div class="row">
                         <div class="col-sm-6 ">
@@ -169,9 +148,9 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4" id="box1" data-aos="fade-left"  data-aos-duration="2000">
+                <div class="col-lg-4" id="box1" data-aos="fade-left" data-aos-duration="2000">
                     <div class=" pt-1">
-                      
+
                         <h4 class="signInText text-center d-block mx-auto ml-auto">
                             <img src="./assets/stupalogo.png" class="img-fluid" alt="">
                         </h4>
@@ -181,35 +160,41 @@
                                     <label for="exampleInputEmail1" ngModel class="form-label">Email address</label>
                                     <div class="input-group mb-2">
                                         <span class="input-group-text" id="basic-addon1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                            </svg>
                                         </span>
-                                    <input name="email" placeholder="Email Address" type="email" ngModel class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="basic-addon1">
-                                    
-                                        </div>
+                                        <input name="email" placeholder="Email Address" type="email" ngModel
+                                            class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="basic-addon1">
+
+                                    </div>
 
                                 </div>
                                 <div class="mb-2 d-block mx-auto ml-auto">
-                                    <label for="exampleInputPassword1"  class="form-label">Password</label>
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
                                     <div class="input-group mb-2">
                                         <span class="input-group-text" id="basic-addon1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                                            </svg>
                                         </span>
-                                    <input type="password" placeholder="Password" name="password" ngModel class="form-control" id="exampleInputPassword1">
+                                        <input type="password" placeholder="Password" name="password" ngModel
+                                            class="form-control" id="exampleInputPassword1">
                                     </div>
-                                    
+
                                 </div>
-                                    <!-- <div class="mb-3 form-check">
+                                <!-- <div class="mb-3 form-check">
                                         <input type="checkbox"  ngModel class="form-check-input" id="exampleCheck1">
                                         <label class="form-check-label"  for="exampleCheck1">Remember me</label>
                                     </div> -->
                                 <button type="Submit" class="submitbtn btn d-block mx-auto ml-auto ">Submit</button>
                             </form>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -222,9 +207,10 @@
 
 
 
+<!-- header home-2 -->
 
 
-<!-- pan2 component -->
+
 <style>
     #container-2 {
         box-sizing: border-box;
@@ -232,20 +218,22 @@
     }
 
     #card-1 {
-        height: 85vh;
+        height: 95vh;
     }
 
     .readmore {
         position: relative;
         bottom: 0;
     }
-    #centerID{
+
+    #centerID {
         margin-top: 20vh;
         margin-bottom: 1vh;
         font-family: 'Play', sans-serif;
 
     }
-    .dashUnderline{
+
+    .dashUnderline {
         border-top: 3px solid grey;
         width: 10vw;
         margin-bottom: 10vh;
@@ -254,61 +242,62 @@
 </style>
 
 <div class="container mt-5 mb-5" id="container-2">
-    <div class="text-center " id="centerID"><h2 class="text-secondary"><b>NEWS</b></h2></div>
+    <div class="text-center " id="centerID">
+        <h2 class="text-secondary"><b>NEWS</b></h2>
+    </div>
     <span class="dashUnderline d-block mx-auto"></span>
-    <!-- <div class="d-block mx-auto "> -->
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="./assets/new1 (2).png">
-                    <div class="text-start p-2 card-text">
-                        <h5>CNBC in conversation with Megha Gambhir</h5>
-                        <p>August 3, 2021 by Megha Gambhir News
-                            Startup Street: Here's how
-                            startups are using technology to mentor
-                            athletesThe Olympic Games have gripped the
-                            nation and as India rejoices the ...
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./assets/new1 (2).png">
+                <div class="text-start p-2 card-text">
+                    <h5>CNBC in conversation with Megha Gambhir</h5>
+                    <p>August 3, 2021 by Megha Gambhir News
+                        Startup Street: Here's how
+                        startups are using technology to mentor
+                        athletesThe Olympic Games have gripped the
+                        nation and as India rejoices the ...
 
-                        </p>
-                        <button class=" readmore btn btn-secondary" type="button">Read more</button>
-                    </div>
-
+                    </p>
+                    <button class=" readmore btn btn-secondary" type="button">Read more</button>
                 </div>
+
             </div>
-            <div class="col-sm-4">
-                <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1300">
-                    <img src="./assets/new2.jpeg">
-                    <div class="text-start p-2 card-text">
-                        <h5>Sweden partnered with Stupa</h5>
-                        <p>Stupa is proud to have joined hands with the Swedish Table Tennis Association as their
-                            official
-                            performance analytics partner...
-                        </p>
-                        <div class="btn-low mt-5">
-                            <button class=" readmore btn btn-secondary mt-4" type="button">Read more</button>
-                        </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1300">
+                <img src="./assets/new2.jpeg">
+                <div class="text-start p-2 card-text">
+                    <h5>Sweden partnered with Stupa</h5>
+                    <p>Stupa is proud to have joined hands with the Swedish Table Tennis Association as their
+                        official
+                        performance analytics partner...
+                    </p>
+                    <div class="btn-low mt-5">
+                        <button class=" readmore btn btn-secondary mt-4" type="button">Read more</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1600">
-                    <img src="./assets/new3.jpeg">
-                    <div class="text-start p-2 card-text">
-                        <h5>Success Stories: Her Story Her Way</h5>
-                        <p>May 28, 2021 by Megha Gambhir News
-                            Success Story is here, Get Inspired!
-                            Success Story in her way, the journey
-                            has not been easy, Building a start-up is
-                            difficult. It requires a constant push...
+        </div>
+        <div class="col-sm-4">
+            <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1600">
+                <img src="./assets/new3.jpeg">
+                <div class="text-start p-2 card-text">
+                    <h5>Success Stories: Her Story Her Way</h5>
+                    <p>May 28, 2021 by Megha Gambhir News
+                        Success Story is here, Get Inspired!
+                        Success Story in her way, the journey
+                        has not been easy, Building a start-up is
+                        difficult. It requires a constant push...
 
 
-                        </p>
+                    </p>
 
-                        <button class="readmore btn btn-secondary mt-5" type="button">Read more</button>
-                    </div>
+                    <button class="readmore btn btn-secondary mt-5" type="button">Read more</button>
                 </div>
             </div>
-            <!-- <div class="col-sm-3">
+        </div>
+        <!-- <div class="col-sm-3">
             <div class="card" data-aos="fade-up" data-aos-duration="1900">
                 <img src="">
                 <div class="text-start p-2 card-text">
@@ -322,144 +311,174 @@
                 </div>
             </div>
         </div> -->
-        </div>
-        <style>
-            #container-3{
-              background-color: rgba(212, 212, 212, 0.37);
-              padding-bottom: 3%;
-            }
-            #WhyAnalytics{
-              margin-top: 10%;
-              padding-left: 15%;
-              padding-right: 15%;
-              margin-bottom: 5%;
-          
-            }
-            /* h3{
-          
-              font-family: 'Notable', sans-serif;
-            } */
-          </style>
-          <div class="container-fluid mt-5" id="container-3">
-            <div class="text-center d-block mx-auto">
-              <h3 id= "WhyAnalytics" class="text-center-1 pt-5" style="font-family: 'Play', sans-serif;">
+    </div>
+</div>
+
+
+
+<!-- header home-3 -->
+
+
+<style>
+    #container-3 {
+        background-color: rgba(212, 212, 212, 0.37);
+        padding-bottom: 3%;
+    }
+
+    #WhyAnalytics {
+        margin-top: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 5%;
+
+    }
+</style>
+<div class="bgImg">
+    <div class=" container mt-5" id="container-3">
+        <div class="text-center d-block mx-auto">
+            <h3 id="WhyAnalytics" class="text-center-1 pt-5" style="font-family: 'Play', sans-serif;">
                 Why STUPA Sport Analytics?
-              </h3>
-              <p>Stupa Sports analysis help coaches to monitor and improve the performance of their players and teams. Stupa demonstrates your strengths and weaknesses. Our purpose is to find key analysis points.</p>
-            </div>
-            <div class="row">
-              <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
-                <img  class="img-fluid rounded " src="./assets/left_align.jpg" width="500" height="900">
-          
-              </div>
-              <div class="col-sm-6">
-              <p> <li> Players & Coaches Demand more Data, Faster with less effort! – That’s why we launched STUPA, to save your time. The level of competition and the importance of data-driven decisions are higher than ever. The burden of this on coaches is real and has pushed us to evolve the role. Stupa Sports Analysis plays an important role in realizing goals and producing long term results – that’s why professional coaches rely on it!
-          
-              </li> </p><br>
-                <p><li>Reports generated from Stupa sports analytics can be used to understand the opposing opponent’s game plans and strategies. If you understand your opposition’s strengths you can put effective strategies, if you understand their weaknesses you can coach your player accordingly.</li></p>
-              </div>
-            </div>
-          </div>
+            </h3>
+            <p>Stupa Sports analysis help coaches to monitor and improve the performance of their players and teams.
+                Stupa demonstrates your strengths and weaknesses. Our purpose is to find key analysis points.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
+                <img class="img-fluid rounded " src="./assets/left_align.jpg" width="500" height="900">
 
-          <!-- pan5 started -->
-          <style>
-            #container-4 {
-              margin-top: 8%;
-              margin-bottom: 8%;
-            }
-          
-            .card {
-              /* border: 2px solid ; */
-              border-radius: 10px;
-              overflow: hidden;
-              position: relative;
-              min-height:50vh ;
-            }
-            #heading{
-              font-family: 'Play', sans-serif;
-            }
-            .owl-carousel .owl-nav{
-    overflow: hidden;
-    height: 0px;
-  }
-  .owl-carousel .nav-btn{
-      height: 47px;
-      position: relative;
-      width: 26px;
-      cursor: pointer;
-      top: 100px !important;
-  }
-
-  .owl-carousel .prev-slide{
-      background: url(nav-icon.png) no-repeat scroll 0 0;
-      left: -33px;
-  }
-  .owl-carousel .next-slide{
-      background: url(nav-icon.png) no-repeat scroll -24px 0px;
-      right: -33px;
-  }
-  .owl-carousel .prev-slide:hover{
-     background-position: 0px -53px;
-  }
-  .owl-carousel .next-slide:hover{
-    background-position: -24px -53px;
-  }
-
-          </style>
-          
-          <div class="container" id="container-4">
-            <div class="text-center mb-5" id="heading">
-              <h2>World Ranked Players<br>
-                Using <b style="color:#1e2d40 ;">Stupa Sports Analytics</b></h2>
             </div>
-          
-            <owl-carousel-o [options]="customOptions">
-              <ng-template carouselSlide>
-                  
-                <div class="card me-3">
-                  <img src="./assets/manav.jpg" width="100"  class="card-img-top">
-                  <h4 class="text-center">Manav Thakkar</h4>
-                  <p class="card-text text-center">
+            <div class="col-sm-6">
+                <p>
+                    <li> Players & Coaches Demand more Data, Faster with less effort! – That’s why we launched STUPA, to
+                        save your time. The level of competition and the importance of data-driven decisions are higher
+                        than ever. The burden of this on coaches is real and has pushed us to evolve the role. Stupa
+                        Sports Analysis plays an important role in realizing goals and producing long term results –
+                        that’s why professional coaches rely on it!
+
+                    </li>
+                </p><br>
+                <p>
+                    <li>Reports generated from Stupa sports analytics can be used to understand the opposing opponent’s
+                        game plans and strategies. If you understand your opposition’s strengths you can put effective
+                        strategies, if you understand their weaknesses you can coach your player accordingly.</li>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- pan5 started -->
+<style>
+    #container-4 {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .card {
+        /* border: 2px solid ; */
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        min-height: 55vh;
+    }
+
+    #heading {
+        font-family: 'Play', sans-serif;
+    }
+
+    .owl-carousel .owl-nav {
+        overflow: hidden;
+        height: 0px;
+    }
+
+    .owl-carousel .nav-btn {
+        height: 47px;
+        position: relative;
+        width: 26px;
+        cursor: pointer;
+        top: 100px !important;
+    }
+
+    .owl-carousel .prev-slide {
+        background: url(nav-icon.png) no-repeat scroll 0 0;
+        left: -33px;
+    }
+
+    .owl-carousel .next-slide {
+        background: url(nav-icon.png) no-repeat scroll -24px 0px;
+        right: -33px;
+    }
+
+    .owl-carousel .prev-slide:hover {
+        background-position: 0px -53px;
+    }
+
+    .owl-carousel .next-slide:hover {
+        background-position: -24px -53px;
+    }
+</style>
+
+<div class="container" id="container-4">
+    <div class="text-center mb-5" id="heading">
+        <h2>World Ranked Players<br>
+            Using <b style="color:#1e2d40 ;">Stupa Sports Analytics</b></h2>
+    </div>
+
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+
+            <div class="card me-3">
+                <img src="./assets/manav.jpg" width="100" class="card-img-top">
+                <h4 class="text-center">Manav Thakkar</h4>
+                <p class="card-text text-center">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
-                  </p>
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="card me-3">
-                  <img class="card-img-top" src="./assets/kanak.jpg" width=50 >
-                  <h4 class="text-center">Kanak Jha</h4>
-                  <p class="card-text text-center">
+                </p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="card me-3">
+                <img class="card-img-top" src="./assets/kanak.jpg" width=50>
+                <h4 class="text-center">Kanak Jha</h4>
+                <p class="card-text text-center">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
-                  </p>
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="card me-3">
-                  <img src="./assets/adriana.jpg" width="100"  class=" card-img-top">
-                  <h4 class="text-center">Adriana Diaz</h4>
-                  <p class="card-text text-center">
+                </p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="card me-3">
+                <img src="./assets/adriana.jpg" width="100" class=" card-img-top">
+                <h4 class="text-center">Adriana Diaz</h4>
+                <p class="card-text text-center">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
-                  </p>
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="card me-3">
-                  <img src="./assets/payas.jpg" width="100">
-                  <h4 class="text-center">Payas Jain</h4>
-                  <p class="card-text text-center">
+                </p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="card me-3">
+                <img src="./assets/payas.jpg" width="100">
+                <h4 class="text-center">Payas Jain</h4>
+                <p class="card-text text-center">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
-                  </p>
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="card me-3">
-                  <img src="./assets/payas.jpg" width="100">
-                  <h4 class="text-center">Payas Jain</h4>
-                  <p class="card-text text-center">
+                </p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="card me-3">
+                <img src="./assets/madhurika.jpg" width="100">
+                <h4 class="text-center">Madhurika Patkar</h4>
+                <p class="card-text text-center">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
-                  </p>
-                </div>
-              </ng-template>
-            </owl-carousel-o>
-          </div>
-          
+                </p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="card me-3">
+                <img src="./assets/manushree.jpg" width="100">
+                <h4 class="text-center">Manushree Patil</h4>
+                <p class="card-text text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                </p>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
