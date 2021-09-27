@@ -1,4 +1,4 @@
-<!-- header home-1 -->
+<!-- header hom-1 -->
 <style>
     .display_flex {
         display: flex;
@@ -11,7 +11,6 @@
         width: 100vw;
         margin: 0;
         box-sizing: border-box;
-        /* overflow: hidden; */
         padding: 0;
         background-position: 50%;
         height: 110vh;
@@ -217,8 +216,14 @@
 
     }
 
-    #card-1 {
-        height: 95vh;
+    .card {
+        width: 100%;
+height: auto;
+        border: none;
+        
+    }
+    #card-1:hover{
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
 
     .readmore {
@@ -273,9 +278,9 @@
                         official
                         performance analytics partner...
                     </p>
-                    <div class="btn-low mt-5">
-                        <button class=" readmore btn btn-secondary mt-4" type="button">Read more</button>
-                    </div>
+                    
+                        <button class=" readmore btn btn-secondary " type="button">Read more</button>
+                    
                 </div>
             </div>
         </div>
@@ -293,7 +298,7 @@
 
                     </p>
 
-                    <button class="readmore btn btn-secondary mt-5" type="button">Read more</button>
+                    <button class="readmore btn btn-secondary " type="button">Read more</button>
                 </div>
             </div>
         </div>
@@ -377,9 +382,10 @@
     .card {
         /* border: 2px solid ; */
         border-radius: 10px;
-        overflow: hidden;
         position: relative;
-        min-height: 55vh;
+        width: 100%;
+        height: auto;
+        border: none;
     }
 
     #heading {
@@ -387,7 +393,6 @@
     }
 
     .owl-carousel .owl-nav {
-        overflow: hidden;
         height: 0px;
     }
 
@@ -427,56 +432,56 @@
     <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide>
 
-            <div class="card me-3">
+            <div class="card m-3">
                 <img src="./assets/manav.jpg" width="100" class="card-img-top">
                 <h4 class="text-center">Manav Thakkar</h4>
                 <p class="card-text text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                    Lorem ipsum dolor sit amt consectetur, adipisicing elit. Quos, est.
                 </p>
             </div>
         </ng-template>
         <ng-template carouselSlide>
-            <div class="card me-3">
+            <div class="card m-3">
                 <img class="card-img-top" src="./assets/kanak.jpg" width=50>
                 <h4 class="text-center">Kanak Jha</h4>
                 <p class="card-text text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                    Lorem ipsum dolor sit amt consectetur, adipisicing elit. Quos, est.
                 </p>
             </div>
         </ng-template>
         <ng-template carouselSlide>
-            <div class="card me-3">
+            <div class="card m-3">
                 <img src="./assets/adriana.jpg" width="100" class=" card-img-top">
                 <h4 class="text-center">Adriana Diaz</h4>
                 <p class="card-text text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                    Lorem ipsum dolor sit amt consectetur, adipisicing elit. Quos, est.
                 </p>
             </div>
         </ng-template>
         <ng-template carouselSlide>
-            <div class="card me-3">
+            <div class="card m-3">
                 <img src="./assets/payas.jpg" width="100">
                 <h4 class="text-center">Payas Jain</h4>
                 <p class="card-text text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                    Lorem ipsum dolor sit amt consectetur, adipisicing elit. Quos, est.
                 </p>
             </div>
         </ng-template>
         <ng-template carouselSlide>
-            <div class="card me-3">
+            <div class="card m-3">
                 <img src="./assets/madhurika.jpg" width="100">
                 <h4 class="text-center">Madhurika Patkar</h4>
                 <p class="card-text text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                    Lorem ipsum dolor sit amt consectetur, adipisicing elit. Quos, est.
                 </p>
             </div>
         </ng-template>
         <ng-template carouselSlide>
-            <div class="card me-3">
+            <div class="card m-3">
                 <img src="./assets/manushree.jpg" width="100">
                 <h4 class="text-center">Manushree Patil</h4>
                 <p class="card-text text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est.
+                    Lorem ipsum dolor sit amt consectetur, adipisicing elit. Quos, est.
                 </p>
             </div>
         </ng-template>
