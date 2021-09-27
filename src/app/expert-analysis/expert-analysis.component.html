@@ -1,112 +1,129 @@
-
 <style>
-.innerContainers{
-background-image: url('./assets/expertBG.jpg');
-/* background-position: center; */
-background-position:100%;
-width: 100%;
-background-size: cover;
-background-repeat: no-repeat;
-color: white;
-background-attachment: fixed;
-}
-.bgGradeint{
-    background-color: rgba(0, 0, 0, 0.438);
-}
-#headerExpert{
-    width: 70vw;
-}
-h1{
-    color:#07e0ae;
-}
-table td{
-    border: none
-}
-iframe{
-    border-radius: 10px;
-}
-#centerbox{
-    width: 65vw;
-    border: 1px solid cadetblue;
-    border-radius: 15px;
-    color: rgba(133, 133, 133, 0.87);
+    .innerContainers {
+        background-image: url('./assets/expertBG.jpg');
+        /* background-position: center; */
+        background-position: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-attachment: fixed;
+    }
+    @media only screen and (min-width: 670px){
+        .innerContainers{
+            text-align: center;
+        }
+        
+    }
 
-}
+    .bgGradeint {
+        background-color: rgba(0, 0, 0, 0.438);
+    }
+
+    #headerExpert {
+        width: 70vw;
+    }
+
+    h1 {
+        color: #07e0ae;
+    }
+
+    table td {
+        border: none
+    }
+
+    iframe {
+        border-radius: 10px;
+    }
+
+    #centerbox {
+        width: 65vw;
+        border: 1px solid cadetblue;
+        border-radius: 15px;
+        color: rgba(133, 133, 133, 0.87);
+
+    }
 </style>
 <div class="container-fluid mt-5">
     <div class="text-center mt-5 pt-5 d-block mx-auto ml-auto" id="headerExpert">
         <h1 style="color: #07e0ae;"><b>Expert Analysis</b></h1>
-        <h2 >We Help Table Tennis Players Improve Their Performance Through Match Analysis.</h2>
+        <h2>We Help Table Tennis Players Improve Their Performance Through Match Analysis.</h2>
     </div>
     <div class="text-center d-block mx-auto ml-auto mt-5 mb-5" id="centerbox">
         <p class="p-3">Expert Analysis is the process of collecting
-             and analyzing the data from your match video
-              and presenting it in a creative and graphical
-               way, so that you can understand each and every 
-               point from Service to the last ball contact. It
-                helps you to understand Service & Receive Pattern
-                , Error & Winner Placements, Strong Strokes, Area
-                 of Work etc. and helps you to understand the strategies
-                  of a particular opponent. </p>
+            and analyzing the data from your match video
+            and presenting it in a creative and graphical
+            way, so that you can understand each and every
+            point from Service to the last ball contact. It
+            helps you to understand Service & Receive Pattern
+            , Error & Winner Placements, Strong Strokes, Area
+            of Work etc. and helps you to understand the strategies
+            of a particular opponent. </p>
     </div>
-    <div class="guide mt-5 mb-5">
+    <div class="container mt-5 mb-5">
         <div class="row pb-5">
-            <div class="col-sm-5 me-5 ms-5">
+            <div class="col-lg-6 ">
                 <table class="table table-hover">
                     <thead>
-                      <tr>
-                          <th><h3 style="color: #07e0ae;"><b>How It Works</b></h3> </th>
-                      </tr>
+                        <tr>
+                            <th>
+                                <h3 style="color: #07e0ae;"><b>How It Works</b></h3>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <li>Send us your video through App.</li> 
-                                </td>
-                          </tr>
+                                <li>Send us your video through App.</li>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
-                              <li>Data Mining</li>  
-                                </td>
-                          </tr>
+                                <li>Data Mining</li>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
-                               <li>Data Analysis</li>  
-                                </td>
-                          </tr>
+                                <li>Data Analysis</li>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
-                               <li>Expert Observations</li>
-                                </td>
-                          </tr>
+                                <li>Expert Observations</li>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
-                              <li>Cracking opponent Stategies</li>  
-                                </td>
-                          </tr>
+                                <li>Cracking opponent Stategies</li>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
-                               <li>Match Analysis Dilivered To You</li> 
-                                </td>
-                          </tr>
+                                <li>Match Analysis Dilivered To You</li>
+                            </td>
+                        </tr>
                     </tbody>
-                    </table>
+                </table>
             </div>
-            <div class="col-sm-6 ">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3wZFTHuzrUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-lg-6">
+                <iframe id="ViostreamIframe" width="100%" height="auto" src="https://www.youtube.com/embed/3wZFTHuzrUg"
+                    style="min-height: 50vh;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+
         </div>
     </div>
 </div>
 
-    <div class="innerContainers mt-5">
-        <div class="bgGradeint">
-        <div class="row1 mt-5 pt-5">
+<div class="innerContainers mt-5">
+    
+    <div class="bgGradeint">
+        <div class="container">
+                    <div class="row1 mt-5 pt-5">
             <div class="row mt-5  pt-5">
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <h1>Error Analysis</h1>
-                        <p class="text-start">
+                        <p class="text-end">
                             Even the best in the world make errors;
                             lessen your chance of making an error by
                             viewing this segment. It shows which stroke
@@ -118,11 +135,11 @@ iframe{
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/strokeanalysis1.png" alt="" width="200">
                 </div>
 
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/strokeanalysis2.png" alt="" width="200">
                 </div>
             </div>
@@ -132,13 +149,13 @@ iframe{
 
         <div class="row2 mt-5  pt-5">
             <div class="row mt-5  pt-5">
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/error&winning.png" alt="" width="200">
                 </div>
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/error&winning2.png" alt="" width="200">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <h1>Error & Winner Placement</h1>
                         <p class="text-start">Every stroke has a placement, be it a Winner
@@ -155,21 +172,21 @@ iframe{
 
         <div class="row3 mt-5  pt-5">
             <div class="row mt-5 pt-5">
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <h1>Stroke Analysis</h1>
                         <p class="text-end">You use a lot of strokes in a match,
-                             check out how many errors you made while
-                              using them, your consistency and points
-                               that you won while using them.
+                            check out how many errors you made while
+                            using them, your consistency and points
+                            that you won while using them.
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/errorplacement1.png" alt="" width="200">
                 </div>
 
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/errorplacement2.png" alt="" width="200">
                 </div>
             </div>
@@ -179,25 +196,27 @@ iframe{
 
         <div class="row4 mt-5  pt-5">
             <div class="row mt-5 pt-5 pb-5">
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/ballplacement1.png" alt="" width="200">
                 </div>
-                <div class="col-sm-3 text-center d-block mx-auto ml-auto">
+                <div class="col-lg-3 text-center d-block mx-auto ml-auto">
                     <img src="./assets/ballplacement2.png" alt="" width="200">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <h1>Ball Contacts</h1>
                         <p class="text-start">Check out which ball contacts of yours
-                             are good for you and which are not. See
-                              the relatable video by just clicking 
-                              on any bar and get better understanding
-                               of each point.
+                            are good for you and which are not. See
+                            the relatable video by just clicking
+                            on any bar and get better understanding
+                            of each point.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
     </div>
 
 </div>
