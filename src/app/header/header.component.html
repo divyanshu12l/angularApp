@@ -138,8 +138,16 @@
 .container .row .textContainer{
     padding-top: 150px;
 }
-#sideImage{
-    padding-top: 8%;
+.imagehead{
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width:700px) {
+
+    .imagehead{
+    visibility: hidden;
+}
 }
 </style>
 
@@ -162,8 +170,8 @@
                     </div>
                 </div>
                     <div class="col-sm-7" id="sideImage" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="text-center">
-                            <img src="./assets/bgselect.png" alt="" width="600">
+                        <div class="text-center" id="responseImg">
+                            <img class="imagehead" src="./assets/bgselect.png" alt="" >
                         </div>
                     </div>
 
