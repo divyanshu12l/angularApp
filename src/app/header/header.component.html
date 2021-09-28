@@ -9,7 +9,7 @@
         padding: 0;
         color: black;
         /* background-position: 50%; */
-        background-image: url('./assets/bgcircle2.png');
+        background-image: url('./assets/bgcircle2.jpg');
         /* background-size: cover; */
         background-size: 100%;
         /* border-bottom: 2px solid gray; */
@@ -34,9 +34,22 @@
     }
 
     .bigFont {
-        font-size: 50px;
+        font-size: 80px;
         border-radius: 50%;
+        text-shadow: 0 0 3px gray, 0 0 5px slategray;;
+        -webkit-text-stroke: 1px  slategray;
+
         font-family: 'Play', sans-serif;
+        animation: color-change 5s infinite;
+
+    }
+    @keyframes color-change {
+        0%{color: rgb(7, 8, 85);}
+        25%{color: rgb(5, 3, 43);}
+        50%{color: rgb(0, 124, 128);}
+        75%{color: rgb(4, 46, 56);}
+        100%{color: black;}
+        
     }
 
     .smallFont {
@@ -161,7 +174,7 @@
                         <p class="smallFont">My Own Website For Programming</p>
                         <div class="row">
                             <div class="col-sm-6 ">
-                                <a href="/"><img src="./assets/appstore.png" width="200" data-aos="zoom-in"></a>
+                                <a href="/"><img src="./assets/appstore.jpg" width="200" data-aos="zoom-in"></a>
                             </div>
                             <div class="col-sm-6">
                                 <img src="" width="100">
@@ -171,7 +184,7 @@
                 </div>
                     <div class="col-sm-7" id="sideImage" data-aos="fade-left" data-aos-duration="1000">
                         <div class="text-center" id="responseImg">
-                            <img class="imagehead" src="./assets/bgselect.png" alt="" >
+                            <img class="imagehead" src="./assets/bgselect.jpg" alt="" >
                         </div>
                     </div>
 
@@ -283,7 +296,7 @@
     <div class="row">
         <div class="col-sm-4">
             <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./assets/new1 (2).png">
+                <img src="./assets/new1 (2).jpg">
                 <div class="text-start p-2 card-text">
                     <h5>CNBC in conversation with Megha Gambhir</h5>
                     <p>August 3, 2021 by Megha Gambhir News
@@ -300,7 +313,7 @@
         </div>
         <div class="col-sm-4">
             <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1300">
-                <img src="./assets/new2.jpeg">
+                <img src="./assets/new2.jpg">
                 <div class="text-start p-2 card-text">
                     <h5>Sweden partnered with Stupa</h5>
                     <p>Stupa is proud to have joined hands with the Swedish Table Tennis Association as their
@@ -315,7 +328,7 @@
         </div>
         <div class="col-sm-4">
             <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1600">
-                <img src="./assets/new3.jpeg">
+                <img src="./assets/new3.jpg">
                 <div class="text-start p-2 card-text">
                     <h5>Success Stories: Her Story Her Way</h5>
                     <p>May 28, 2021 by Megha Gambhir News
@@ -355,7 +368,7 @@
 
 <style>
     .bgImg{
-        background-image: url('./assets/blurry-gradient-haikei.png');
+        background-image: url('./assets/blurry-gradient-haikei.jpg');
         background-size: cover;
         color:black;
         background-repeat: no-repeat;
