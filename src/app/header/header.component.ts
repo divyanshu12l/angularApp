@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
   customOptions: OwlOptions = {
     mouseDrag: true,
     loop:true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: true,
     dots: false,
     autoplay: true,
