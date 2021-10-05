@@ -26,7 +26,10 @@ import { ExpertAnalysisComponent } from './expert-analysis/expert-analysis.compo
 import { RTMatchAnalysisComponent } from './rtmatch-analysis/rtmatch-analysis.component';
 import { RTPractiseAnalysisComponent } from './rtpractise-analysis/rtpractise-analysis.component';
 import { AthleteProfilingComponent } from './athlete-profiling/athlete-profiling.component';
-import { CreativeMediaComponent } from './creative-media/creative-media.component'
+import { CreativeMediaComponent } from './creative-media/creative-media.component';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+
 // import '@types/googlemaps';
 
 // declare global {
@@ -66,6 +69,8 @@ import { CreativeMediaComponent } from './creative-media/creative-media.componen
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
+    LoadingBarModule,
+    LoadingBarRouterModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyDjngAJCeHZT7QPmfmXWtgKRdC0baTyPiY'	
     })
