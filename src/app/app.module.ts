@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+// import { OwlOptions } from 'ngx-owl-carousel-o';
+import {BrowserModule} from '@angular/platform-browser'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Pan1Component } from './pan1/pan1.component';
@@ -53,12 +56,15 @@ import { CreativeMediaComponent } from './creative-media/creative-media.componen
     RTMatchAnalysisComponent,
     RTPractiseAnalysisComponent,
     AthleteProfilingComponent,
-    CreativeMediaComponent
+    CreativeMediaComponent,
+
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
+    BrowserAnimationsModule,
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyDjngAJCeHZT7QPmfmXWtgKRdC0baTyPiY'	

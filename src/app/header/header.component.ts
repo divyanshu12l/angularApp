@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from "@angular/forms";
-import { OwlOptions } from 'ngx-owl-carousel-o';
+// import { OwlOptions } from 'ngx-owl-carousel-o';
 import { cont} from 'src/app/news/news.component'
 
 import Swiper from 'swiper';
@@ -31,16 +31,15 @@ export class HeaderComponent implements OnInit {
     else (console.warn('not Working'))
 
   }
-  customOptions: OwlOptions = {
+  customOptions: any = {
+    loop: true,
     mouseDrag: true,
-    loop:true,
     touchDrag: true,
     pullDrag: true,
-    dots: false,
-    autoplay: true,
+    dots: true,
     navSpeed: 700,
-    margin:2,
-    navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+    margin:10,
+    navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>' ],
     responsive: {
       0: {
         items: 1
@@ -57,5 +56,4 @@ export class HeaderComponent implements OnInit {
     },
     nav: true
   }
-
 }

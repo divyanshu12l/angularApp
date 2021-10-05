@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+// import { OwlOptions } from 'ngx-owl-carousel-o';
 import Swiper from 'swiper';
 
 @Component({
@@ -15,8 +15,8 @@ export class Pan4Component implements OnInit {
 
   ngOnInit(): void {
   }
-  customOptions: OwlOptions = {
-    loop: true,
+  customOptions: any = {
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,

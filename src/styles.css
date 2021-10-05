@@ -1,13 +1,24 @@
-/* 
-.container{
-    border: 2px solid turquoise;
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+ .owl-carousel-o-slider .owl-next, .owl-carousel-o-slider .owl-prev {
+    background-color: turquoise !important;
+    position: absolute;
+    top: 50% !important;
 }
-.row{
-    border: 2px solid red;
+.owl-carousel-o-slider .owl-prev{
+right: 100%;}
+.owl-carousel-o-slider .owl-next{
+left: 100%;
 }
-.row col{
-    border: 2px solid rebeccapurple;
-} */
-/* div{
-    border: 1px solid turquoise;
-} */
+
+/* slider for about us  */
+.owl-carousel-o-slider-2 .owl-next, .owl-carousel-o-slider-2 .owl-prev {
+    background-color: rgba(0, 0, 0, 0.226) !important;
+    position: absolute;
+    top: 50% !important;
+}
+.owl-carousel-o-slider-2 .owl-prev{
+right: 100%;}
+.owl-carousel-o-slider-2 .owl-next{
+left: 100%;
+}

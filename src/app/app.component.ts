@@ -23,7 +23,7 @@ longitude = 7.809007;
       if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0)
       this.header_variable=true;
       else{
-        this.header_variable = false
+        this.header_variable = true
       }
     }
 

@@ -1,7 +1,8 @@
 <style>
   .header_change{
-    background-color: black;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.212);
+    background-color: rgba(0, 0, 0, 0.884);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+    /* height: 12%; */
   }
   .dropdown-submenu {
   position: relative;
@@ -50,12 +51,15 @@
   -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
 }
+.normal{
+  background-color: rgba(0, 0, 0, 0.822);
+}
 </style>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black"   data-aos="fade-down" >
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-3 pb-3" [class.normal] [class.header_change]="header_variable"   data-aos="fade-down" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img class="img-fluid" width="50" src="./assets/Code.png">
+      <img class="img-fluid" width="60" src="./assets/stupalogo.png">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
