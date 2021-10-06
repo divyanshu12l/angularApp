@@ -1,5 +1,6 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+
  .owl-carousel-o-slider .owl-next, .owl-carousel-o-slider .owl-prev {
     background-color: turquoise !important;
     position: absolute;
@@ -8,6 +9,16 @@
 .owl-carousel-o-slider .owl-prev{
 right: 100%;}
 .owl-carousel-o-slider .owl-next{
+left: 100%;
+}
+ .owl-carousel-o-slider-3 .owl-next, .owl-carousel-o-slider-3 .owl-prev {
+    background-color: rgba(0, 0, 0, 0.212) !important;
+    position: absolute;
+    top: 50% !important;
+}
+.owl-carousel-o-slider-3 .owl-prev{
+right: 100%;}
+.owl-carousel-o-slider-3 .owl-next{
 left: 100%;
 }
 
@@ -21,4 +32,13 @@ left: 100%;
 right: 100%;}
 .owl-carousel-o-slider-2 .owl-next{
 left: 100%;
+}
+.custom-dialog-container  {
+ padding: 0 !important;
+ margin: 0 !important;
+ 
+}
+.mat-dialog-container {
+    margin: 0 !important;
+padding: 0 !important;
 }

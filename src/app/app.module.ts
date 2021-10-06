@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import {MatDialogModule} from '@angular/material/dialog'
 // import { OwlOptions } from 'ngx-owl-carousel-o';
-import {BrowserModule} from '@angular/platform-browser'
-
+import {BrowserModule} from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Pan1Component } from './pan1/pan1.component';
@@ -29,6 +29,7 @@ import { AthleteProfilingComponent } from './athlete-profiling/athlete-profiling
 import { CreativeMediaComponent } from './creative-media/creative-media.component';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { DownloadPopupComponent } from './download-popup/download-popup.component';
 
 // import '@types/googlemaps';
 
@@ -60,6 +61,7 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     RTPractiseAnalysisComponent,
     AthleteProfilingComponent,
     CreativeMediaComponent,
+    DownloadPopupComponent,
 
     
   ],
@@ -71,6 +73,7 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     FormsModule,
     LoadingBarModule,
     LoadingBarRouterModule,
+    MatDialogModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyDjngAJCeHZT7QPmfmXWtgKRdC0baTyPiY'	
     })
