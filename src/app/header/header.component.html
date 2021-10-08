@@ -1,138 +1,9 @@
 <!-- header hom-1 -->
 <style>
-    .display_flex {
-        display: flex;
-    }
-
-    .bg_img {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-
-    .bg_transparent {
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-    }
-
-    .bg_transparent2 {
-        width: 100%;
-        height: auto;
-    }
-
-    #text-start {
-        /* padding-top: 15%; */
-        position: relative;
-        /* top: 100px; */
-        /* color: white; */
-        /* padding-left: 50px; */
-    }
-
-    .bigFont {
-        font-size: 420%;
-        padding-top: 200px;
-        /* font-family: 'Exo 2', sans-serif; */
-        font-family: 'Righteous', cursive;
-
-
-    }
-
-    /* @keyframes color-change {
-        0% {
-            color: rgb(7, 8, 85);
-        }
-
-        25% {
-            color: rgb(5, 3, 43);
-        }
-
-        50% {
-            color: rgb(0, 124, 128);
-        }
-
-        75% {
-            color: rgb(4, 46, 56);
-        }
-
-        100% {
-            color: black;
-        }
-
-    } */
-
-    .smallFont {
-        /* font-size: large; */
-        font-size: 500%;
-        /* color: white; */
-        font-family: 'Archivo Black', sans-serif;
-    }
-
-    @media only screen and (max-width:440px) {
-        .smallFont {
-            font-size: 10vw;
-        }
-    }
-
-
-    h4 {
-        font-family: 'Baloo 2', cursive;
-        margin-top: 4%;
-    }
-
-    .textContainer {
-        width: 100%;
-        height: auto;
-        /* padding-top: 350px; */
-        color: turquoise;
-    }
-
-    .imagehead {
-        padding-top: 100px;
-        width: 100%;
-        height: auto;
-    }
-
-    @media only screen and (max-width:700px) {
-
-        .imagehead {
-            visibility: hidden;
-        }
-    }
-
-    .lineElement {
-        border-top: 15px solid white;
-        border-radius: 50px;
-        width: 50%;
-        left: 0;
-        animation: draw-line 2s 1;
-
-    }
-
-    @keyframes draw-line {
-        0% {
-            width: 0px;
-        }
-
-        100% {
-            width: 50%;
-        }
-
-
-    }
-
     video {
         object-fit: cover;
         height: auto;
         width: 100%;
-
         top: 0;
         left: 0;
     }
@@ -141,95 +12,27 @@
 <video id="background-video" autoplay loop muted poster="./assets/What it takes to be a Champion!.jpg">
     <source src="../assets/What it takes to be a Champion! (2).mp4" type="video/mp4">
 </video>
-<div class="bg_img">
-    <div class="bg_transparent">
-        <div class="bg_transparent2">
-            <div class="container" id="container-1">
-
-                <!-- <div class="textContainer">
-                <h1 class="bigFont text-center" data-aos="fade-up" data-aos-duration="1500">STUPA</h1>
-                <div class="lineElement d-block ml-auto mx-auto"></div>
-                <h1 class="smallFont text-center" data-aos="zoom-out" data-aos-duration="1500">Sports Analytics</h1>
-            </div> -->
-            </div>
-            <div class="col-sm-7" id="sideImage" data-aos="fade-left" data-aos-duration="1000">
-                <div class="text-center" id="responseImg">
-                    <!-- <img class="imagehead" src="./assets/bgselect.jpg" alt="" > -->
-                </div>
 
 
 
-                <!-- <div class="col-lg-4" id="box1" data-aos="fade-left" data-aos-duration="2000">
-                    <div class=" pt-1">
-
-                        <h4 class="signInText text-center d-block mx-auto ml-auto">
-                            <img src="./assets/stupalogo.png" class="img-fluid" alt="">
-                        </h4>
-                        <div class="container">
-                            <form class="signInForm" #SignIn="ngForm" (ngSubmit)="Input(SignIn.value)">
-                                <div class="mb-2 d-block mx-auto ml-auto">
-                                    <label for="exampleInputEmail1" ngModel class="form-label">Email address</label>
-                                    <div class="input-group mb-2">
-                                        <span class="input-group-text" id="basic-addon1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                                            </svg>
-                                        </span>
-                                        <input name="email" placeholder="Email Address" type="email" ngModel
-                                            class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="basic-addon1">
-
-                                    </div>
-
-                                </div>
-                                <div class="mb-2 d-block mx-auto ml-auto">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <div class="input-group mb-2">
-                                        <span class="input-group-text" id="basic-addon1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
-                                            </svg>
-                                        </span>
-                                        <input type="password" placeholder="Password" name="password" ngModel
-                                            class="form-control" id="exampleInputPassword1">
-                                    </div>
-
-                                </div>
-                            
-                                <button type="Submit" class="submitbtn btn d-block mx-auto ml-auto ">Submit</button>
-                            </form>
-
-                        </div>
-                    </div>
-                </div> -->
 
 
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-
+<!-- component-1 (News-component) -->
 
 
 
 
 <style>
-    #container-2 {
+    #newsContainer {
         box-sizing: border-box;
         margin-bottom: 100px;
-        margin-top: 15vh;
+        margin-top: 8%;
     }
 
     .card {
         width: 100%;
-        background-color: rgba(218, 218, 218, 0.699);
+        /* background-color: rgba(218, 218, 218, 0.699); */
+        box-shadow: 0 0 30px rgb(214 215 216 / 35%);
         height: auto;
         overflow: hidden;
         /* border: 1px solid turquoise; */
@@ -249,13 +52,13 @@
 
     }
 
-    #centerID {
+    #newsContainer-heading {
         margin-top: 3rem;
         margin-bottom: 1vh;
 
     }
 
-    .dashUnderline {
+    .Underline {
         border-top: 3px solid grey;
         width: 13vw;
         margin-bottom: 10vh;
@@ -271,14 +74,14 @@
     }
 </style>
 
-<div class="container " id="container-2">
-    <div class="text-center  " id="centerID">
-        <h1 class="text-center"><b style="color: turquoise;">Latest News</b></h1>
+<div id="newsContainer" class="container">
+    <div id="newsContainer-heading" class="text-center">
+        <h1 class="subHead text-center"><b style="color: turquoise;">Latest News</b></h1>
     </div>
-    <span class="dashUnderline d-block mx-auto"></span>
-    <div class="row ">
-        <div class="col-sm-4 ">
-            <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1000">
+    <span class="Underline d-block mx-auto"></span>
+    <div id="newsContainer-box" class="row">
+        <div id="newsContainer-body-box-1" class="col-sm-4">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./assets/new1 (2).jpg">
                 <div class="text-start p-2 card-text">
                     <h5>CNBC in conversation with Megha Gambhir</h5>
@@ -293,8 +96,8 @@
 
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1300">
+        <div id="newsContainer-body-box-2" class="col-sm-4">
+            <div class="card" data-aos="fade-up" data-aos-duration="1300">
                 <img src="./assets/new2.jpg">
                 <div class="text-start p-2 card-text">
                     <h5>Sweden partnered with Stupa</h5>
@@ -308,8 +111,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card" id="card-1" data-aos="fade-up" data-aos-duration="1600">
+        <div id="newsContainer-body-box-3" class="col-sm-4">
+            <div class="card" data-aos="fade-up" data-aos-duration="1600">
                 <img src="./assets/new3.jpg">
                 <div class="text-start p-2 card-text">
                     <h5>Success Stories: Her Story Her Way</h5>
@@ -319,48 +122,40 @@
                         has not been easy, Building a start-up is
                         difficult. It requires a constant push...
 
-
                     </p>
 
                     <button class="readmore btn btn-secondary " type="button">Read more</button>
                 </div>
             </div>
         </div>
-        <!-- <div class="col-sm-3">
-            <div class="card" data-aos="fade-up" data-aos-duration="1900">
-                <img src="">
-                <div class="text-start p-2 card-text">
-                    <h5>Lorem, ipsum .</h5>
-                    <p>Lorem ipsum,  sit amet consectetur adipisicing elit. Aut, velit in. Voluptas, odio et.
-                        Tenetur suscipit cum veritatis voluptate vitae aliquam? Cupiditate sunt odit commodi officia
-                        animi voluptates eaque vel!
 
-                    </p>
-                    <button class="btn btn-secondary" type="button">Read more</button>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 
 
 
-<!-- header home-3 -->
+
+
+<!-- component-2 (whyAnalytics-component)-->
+
+
 
 
 
 
 <style>
-    #container-3 {
+     #whyAnalytics-component{
+         margin-top: 8%;
+     }
+    #whyAnalytics-container {
         overflow: hidden;
-        background-image: url('./assets/wave-haikei.png');
+        background-image: url('./assets/expertBG.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         /* border: 4px solid turquoise; */
         color: black;
         border-radius: 10px;
-        margin-top: 15vh;
         ;
         background-repeat: no-repeat;
     }
@@ -378,71 +173,94 @@
         max-width: 800px;
     }
 
-    .innerGradient {
-        width: auto;
-        /* background-image: url('./assets/stacked-waves-haikei.png'); */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
 
+    #whyAnalytics-container-body {
+        margin-top: 50px;
+        max-width: 70%;
+        border-top: 2px solid turquoise;
+        border-bottom: 2px solid turquoise;
+        margin-bottom: 20px;
+    }
+    #whyAnalytics-container-body-heading{
+        font-family: 'Oswald', sans-serif;
+    }
+
+    #Absolute {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgCont {
+        width: 100%;
+        height: auto;
+    }
+
+    #whyAnalytics-container-overImage {
+        background-color: rgba(0, 0, 0, 0.384);
     }
 </style>
-<div class="container">
-    <div class="mx-auto" id="container-3">
-        <div class="innerGradient pb-5">
-            <div class="text-center d-block mx-auto ml-auto">
-                <h2 id="WhyAnalytics" class="text-center">
-                    <b style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: turquoise;">Why STUPA Sport
-                        Analytics?</b>
-                </h2>
-                <h6 class="pb-4 d-block ml-auto mx-auto">Stupa Sports analysis help coaches to monitor and improve the
-                    performance of their players and teams.
-                    Stupa demonstrates your strengths and weaknesses. Our purpose is to find key analysis points.</h6>
-            </div>
-            <div class="row p-3">
-                <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
-                    <img class="img-fluid rounded " src="./assets/Screenshot (48).jpg">
+<div id="whyAnalytics-component" class="text-center">
+    <h2 id="whyAnalytics-heading" class="subHead text-center m-5">
+        <b class="text-secondary">Why STUPA Sport Analytics?</b>
+    </h2>
+</div>
+<div id="whyAnalytics-container" class="container">
+        <div id="whyAnalytics-container-overImage" class="overImage pb-5">
+           
+                <div id="whyAnalytics-container-header" class="text-center d-block mx-auto ml-auto pt-5">
+                    <img id="whyAnalytics-container-header-image" class="img-responsive" src="./assets/stupalogo.png" alt="">
 
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="text-right pb-3">
-                        <p>
-                            <li> Players & Coaches Demand more Data, Faster with less effort! – That’s why we launched
-                                STUPA, to
-                                save your time. The level of competition and the importance of data-driven decisions are
-                                higher
-                                than ever. The burden of this on coaches is real and has pushed us to evolve the role.
-                                Stupa
-                                Sports Analysis plays an important role in realizing goals and producing long term
-                                results –
-                                that’s why professional coaches rely on it!
+                <div id="whyAnalytics-container-body" class="pt-3 pb-2 d-block mx-auto ml-auto" >
 
-                            </li>
+                    <div class="text-center p-5 pb-2 pt-3" style="color: white;">
+                        <h5 id="whyAnalytics-container-body-heading" class="pb-4 d-block  mx-auto"  style="color: white;">Stupa Sports analysis
+                            help coaches to monitor and improve the
+                            performance of their players and teams.
+                            Stupa demonstrates your strengths and weaknesses. Our purpose is to find key analysis
+                            points.
+                        </h5>
+                        <p>
+                            Players & Coaches Demand more Data, Faster with less effort! – That’s why we launched
+                            STUPA, to
+                            save your time. The level of competition and the importance of data-driven decisions are
+                            higher
+                            than ever. The burden of this on coaches is real and has pushed us to evolve the role.
+                            Stupa
+                            Sports Analysis plays an important role in realizing goals and producing long term
+                            results –
+                            that’s why professional coaches rely on it!
+
+
                         </p><br>
                         <p>
-                            <li>Reports generated from Stupa sports analytics can be used to understand the opposing
-                                opponent’s
-                                game plans and strategies. If you understand your opposition’s strengths you can put
-                                effective
-                                strategies, if you understand their weaknesses you can coach your player accordingly.
-                            </li>
+                            Reports generated from Stupa sports analytics can be used to understand the opposing
+                            opponent’s
+                            game plans and strategies. If you understand your opposition’s strengths you can put
+                            effective
+                            strategies, if you understand their weaknesses you can coach your player accordingly.
+
                         </p>
                     </div>
                 </div>
-            </div>
+        
         </div>
-    </div>
 </div>
 
 
-<!-- header home-2 -->
 
 
-<!-- pan5 started -->
+<!-- component-3 (stupaUserRankedP-component)-->
+
+
+
+
 <style>
-    #container-4 {
-        margin-top: 8%;
+    #stupaUserRankedP-component {
+        margin-top:8%;
         margin-bottom: 8%;
     }
 
@@ -473,13 +291,13 @@
     }
 </style>
 
-<div class="container" id="container-4">
-    <div class="text-center " id="heading">
-        <h2><b style="font-weight: 800; color: black;">World Ranked Players Using </b><br>
+<div id="stupaUserRankedP-component" class="container">
+    <div id="stupaUserRankedP-component-heading" class=" text-center ">
+        <h2 class="subHead"><b style="font-weight: 800; color: black;">World Ranked Players Using </b><br>
             <b style="font-size: larger; font-weight: 800; color: turquoise;">Stupa Sports Analytics</b>
         </h2>
     </div>
-    <section class="owl-carousel-o-slider p-3 ">
+    <section class="owl-carousel-o-slider p-4 ">
 
         <owl-carousel-o [options]="customOptions">
             <ng-template carouselSlide>
@@ -533,30 +351,6 @@
                     </p>
                 </div>
             </ng-template>
-            <!-- <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
-                    <div class="imgContainer">
-                    <img src="./assets/madhurika.jpg" width="100">
-                    </div>
-                    <h4 class="text-center">Madhurika Patkar</h4>
-                    <p class="card-text text-center">
-                        India<br>
-                       World Rank
-                    </p>
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
-                    <div class="imgContainer">
-                                            <img src="./assets/manushree.jpg" width="100">
-                                            </div>
-                    <h4 class="text-center">Manushree Patil</h4>
-                    <p class="card-text text-center">
-                        India<br>
-                       World Rank
-                    </p>
-                </div>
-            </ng-template> -->
             <ng-template carouselSlide>
                 <div class="card m-3 pb-3">
                     <div class="imgContainer">
@@ -609,13 +403,21 @@
     </section>
 </div>
 
-<!-- services we provide -->
+
+
+
+
+<!-- component-4 (services-component) -->
+
+
+
+
 <style>
-    #container-5 {
-        margin-top: 15vh;
+    #services-component {
+        margin-top: 8%;
     }
 
-    #expert1 {
+    .slides {
         max-width: 400px;
         height: auto !important;
         margin-left: auto;
@@ -623,35 +425,41 @@
         display: block;
 
     }
+
+    .servName {
+        color: turquoise;
+    }
 </style>
 
-<div class="container" id="container-5">
-    <div class="cont5-header">
-        <h1 class="text-center" style="color: turquoise;"><b>Services We Provide </b></h1>
+<div id="services-component" class="container">
+    <div id="services-component-heading">
+        <h1 class="subHead text-center"><b class="servName text-secondary">Services We Provide </b></h1>
     </div>
-    <div class="slider">
-        <section class="owl-carousel-o-slider-3 mt-5">
+    <div class="services-component-slider">
+        <section class="owl-carousel-o-slider-3 mt-5 p-4">
             <owl-carousel-o [options]="customOptions2">
                 <ng-template carouselSlide>
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <div id="expert1" class="img-responsive">
+                            <div id="slide-1" class="slides img-responsive">
                                 <img class="img-fluid" width="100" src="./assets/expertservice.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="count">
-                                <h1 class="text-start">no. 1</h1>
+                                <h1 class="text-start">No. 1</h1>
                             </div>
                             <div class="subheading">
-                                <h2 class="text-start"><b>EXPERT ANALYSIS</b></h2>
+                                <h2 class=" subHead text-start "><b class="servName">EXPERT ANALYSIS</b></h2>
                             </div>
                             <div class="info">
                                 <p class="text-start">
-                                    Match analysis is a process of collecting the data of your Table tennis match where
+                                    Match analysis is a process of collecting the data of your Table tennis match
+                                    where
                                     you’d be able to view your errors, winners, ball placement, effective serves and
-                                    Receives, effective strokes and many more including video clippings that’ll help you
+                                    Receives, effective strokes and many more including video clippings that’ll help
+                                    you
                                     in understanding the point in a better way.
                                 </p>
                             </div>
@@ -662,16 +470,16 @@
                 <ng-template carouselSlide>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div id="expert1" class="img-responsive">
+                            <div id="slide-2" class="slides img-responsive">
                                 <img class="img-fluid" width="100" src="./assets/realtimeservice.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="count">
-                                <h1 class="text-start">no. 2</h1>
+                                <h1 class="text-start">No. 2</h1>
                             </div>
                             <div class="subheading">
-                                <h2 class="text-start"><b>REAL-TIME ANALYSIS</b></h2>
+                                <h2 class="subHead text-start"><b class="servName">REAL-TIME ANALYSIS</b></h2>
                             </div>
                             <div class="info">
                                 <p class="text-start">
@@ -687,16 +495,16 @@
                 <ng-template carouselSlide>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div id="expert1" class="img-responsive">
+                            <div id="slide-3" class="slides img-responsive">
                                 <img class="img-fluid" width="100" src="./assets/practiseservice.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="count">
-                                <h1 class="text-start">no. 3</h1>
+                                <h1 class="text-start">No. 3</h1>
                             </div>
                             <div class="subheading">
-                                <h2 class="text-start"><b>PRACTICE ANALYSIS</b></h2>
+                                <h2 class="subHead text-start"><b class="servName">PRACTICE ANALYSIS</b></h2>
                             </div>
                             <div class="info">
                                 <p class="text-start">
@@ -711,20 +519,21 @@
                 <ng-template carouselSlide>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div id="expert1" class="img-responsive">
+                            <div id="slide-4" class="slides img-responsive">
                                 <img class="img-fluid" width="100" src="./assets/athleteservice.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="count">
-                                <h1 class="text-start">no. 4</h1>
+                                <h1 class="text-start">No. 4</h1>
                             </div>
                             <div class="subheading">
-                                <h2 class="text-start"><b>ATHLETE PROFILING</b></h2>
+                                <h2 class="subHead text-start"><b class="servName">ATHLETE PROFILING</b></h2>
                             </div>
                             <div class="info">
                                 <p class="text-start">
-                                    The yearly performance of the player is created, mentioning the no of matches played
+                                    The yearly performance of the player is created, mentioning the no of matches
+                                    played
                                     by him/her. Matches won and lost along with all the observations and data with
                                     Playing patterns, Enlightening Facts and Trends.</p>
                             </div>
@@ -737,21 +546,28 @@
     </div>
 </div>
 
-<!-- free trial -->
+
+
+
+<!-- component-5 (getFree-component) -->
+
+
+
 
 <style>
-    #container-6 {
-        margin-top: 15vh;
-        margin-bottom: 15vh;
- 
+    #getFree-component {
+        margin-top: 8%;
+        margin-bottom: 10%;
+        width: 100%;
+
 
     }
 
-    .bgimg-2 {
+    #getFree-component-overImage {
         position: relative;
         width: auto;
         overflow: hidden;
-        height: 500px;
+        height: 600px;
         background-image: url('./assets/MATCH ANALYSIS (BG PHOTO).jpg');
         filter: blur(3px);
         -webkit-filter: blur(3px);
@@ -764,9 +580,9 @@
     .contheading2 {
         position: absolute;
         width: 100%;
-        height: 500px;
+        height: 600px;
         background-color: rgba(0, 0, 0, 0.644);
-        margin-top: -500px;
+        margin-top: -600px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -779,36 +595,88 @@
         border-radius: 50px;
         margin-top: 30%;
         padding: 10px;
-        width: 40%;
+        min-width: 40%;
         font-size: larger;
-        height: 12%;
+        min-height: 12%;
     }
 
-#sideimg{
-    filter:drop-shadow(10px 10px 10px rgba(8, 8, 8, 0.795));
-}
+    #sideimg {
+        filter: drop-shadow(10px 10px 10px rgba(8, 8, 8, 0.795));
+        width: 100%;
+        height: auto;
+    }
 
+
+    #rowFull {}
 </style>
 
-<div class="box" id="container-6">
-    <div class="bgimg-2">
+<div id="getFree-component" >
+    <div id="getFree-component-overImage" class="overImage">
     </div>
 
     <div class="contheading2 ">
-       
-        <h1 class="text-center pt-3">
+
+        <h1 class="subHead text-center pt-4">
             <b style="color: white">Get your First <br><b style="color: turquoise;">Match Analysis Free</b> </b>
         </h1>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-5 text-center"><button id="btntrial" class="btn btn p-2 ps-3 pe-3" type="button"
+            <div class="row" id="rowFull">
+                <div class="col-lg-5 text-center"><button id="btntrial" class="btn btn p-2 ps-3 pe-3" type="button"
                         (click)="openModel()"><b>Join For Free <i class="bi bi-patch-check"></i></b>
                     </button></div>
-                <div class="col-sm-7 text-start">
-                    
+                <div class="col-lg-7 text-end" id="responsiveImg">
                     <img id="sideimg" class="img-responsive img-rounded" src="./assets/bgselect.jpg" width="650" alt="">
-            </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+
+
+<!-- client section -->
+
+<style>
+    #container-8 {
+        margin-top: 8%;
+    }
+
+    .clientHeader {
+        margin-bottom: 5vh;
+    }
+</style>
+<div class="container" id="container-8">
+    <div class="clientSection">
+        <div class="subHead">
+            <h1 class="text-center"><b>Our Clients</b></h1>
+        </div>
+
+        <section class="owl-carousel-o-slider-4 p-3">
+            <owl-carousel-o [options]="customOptions3">
+                <ng-template carouselSlide>
+                    <div class="imgContainer">
+                        <img class="img-responsive" src="./assets/client1.jpg" alt="">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img class="img-responsive" src="./assets/client2.jpg" alt="">
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img class="img-responsive" src="./assets/client3.jpg" alt="">
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img class="img-responsive" src="./assets/client4.jpg" alt="">
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img class="img-responsive" src="./assets/client6.jpg" alt="">
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img class="img-responsive" src="./assets/client7.jpg" alt="">
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img class="img-responsive" src="./assets/client8.jpg" alt="">
+                </ng-template>
+            </owl-carousel-o>
+        </section>
+    </div>
+
 </div>

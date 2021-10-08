@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from "@angular/forms";
-// import { OwlOptions } from 'ngx-owl-carousel-o';
-import { cont} from 'src/app/news/news.component';
-import Swiper from 'swiper';
 import { MatDialog } from '@angular/material/dialog';
 import { DownloadPopupComponent } from '../download-popup/download-popup.component';
+// import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -30,7 +28,7 @@ export class HeaderComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
-    
+
   }
   scrollHandler(condition: any){
     condition = true;
@@ -50,8 +48,10 @@ export class HeaderComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
+    autoplay:true,
+    autoplayTimeout:2200,
     dots: true,
-    navSpeed: 700,
+    navSpeed: 1000,
     margin:10,
     navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>' ],
     responsive: {
@@ -75,8 +75,11 @@ export class HeaderComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
+    autoplay:true,
+    autoplayTimeout:5000,
+        autoplayHoverPause:true,
     dots: true,
-    navSpeed: 800,
+    navSpeed: 100,
     navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
     responsive: {
       0: {
@@ -94,5 +97,45 @@ export class HeaderComponent implements OnInit {
     },
     nav: true
   }
+  customOptions3: any = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    autoplay:true,
+    autoplayTimeout:1500,
+    // autoplayHoverPause:false,
+    dots: false,
+    navText:['',''],
+    margin:30,
+    smartSpeed: 500,
+    navSpeed: 800,
+    items:1,
+
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 3
+      },
+      740: {
+        items: 4
+      },
+      940: {
+        items: 5
+      }
+    },
+    nav: false
+  }
+  slides = [
+    {id: 1, img: "https://dummyimage.com/350x150/423b42/fff"},
+    {id: 2, img: "https://dummyimage.com/350x150/2a2b7a/fff"},
+    {id: 3, img: "https://dummyimage.com/350x150/1a2b7a/fff"},
+    {id: 4, img: "https://dummyimage.com/350x150/7a2b7a/fff"},
+    {id: 5, img: "https://dummyimage.com/350x150/9a2b7a/fff"},
+    {id: 6, img: "https://dummyimage.com/350x150/5a2b7a/fff"},
+    {id: 6, img: "https://dummyimage.com/350x150/4a2b7a/fff"}
+  ];
 
 }

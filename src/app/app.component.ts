@@ -17,13 +17,13 @@ longitude = 7.809007;
   ngOnInit(){
     AOS.init(); 
    }
-    header_variable = true;
+    header_variable = false;
     @HostListener("document:scroll")
     scrollfunction(){
-      if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0)
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1)
       this.header_variable=true;
       else{
-        this.header_variable = true
+        this.header_variable = false
       }
     }
 
