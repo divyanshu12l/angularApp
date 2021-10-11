@@ -3,6 +3,7 @@
     background-image: url('./assets/founderBG.jpg');
 background-size: cover;
 background-attachment: fixed;
+filter: grayscale(100%);
 background-repeat: no-repeat;
 border-bottom: 2px solid turquoise;
 background-position: center;
@@ -66,10 +67,14 @@ text-transform: uppercase;
 .navbar-nav {
   color: black;
 }
+.nav-link{
+  color: white;
+}
 </style>
+<!-- [class.normal] -->
 
 <ngx-loading-bar [height]="'5px'" [color]="'turquoise'" [includeSpinner]="false"></ngx-loading-bar>
-<nav class="navbar fixed-top navbar-expand-lg navbar pt-4 pb-4" [class.normal] [class.header_change]="header_variable"   data-aos="fade-down" >
+<nav class="navbar fixed-top navbar-expand-lg navbar pt-4 pb-4"  [class.header_change]="header_variable"   data-aos="fade-down" data-aos-duration="1000" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img class="img-fluid" width="60" src="./assets/stupalogo.png">

@@ -1,17 +1,26 @@
 <!-- header hom-1 -->
 <style>
-    video {
+    .header img{
+        width: 100%;
+        height: 100%;
+    }
+    /* video {
         object-fit: cover;
         height: auto;
         width: 100%;
         top: 0;
         left: 0;
-    }
+    } */
 </style>
+<div class="contain">
+    <div class="header">
+        <img src="./assets/Screenshot (68).png" alt="">
+    </div>
+</div>
 
-<video id="background-video" autoplay loop muted poster="./assets/What it takes to be a Champion!.jpg">
+<!-- <video id="background-video" autoplay loop muted poster="./assets/What it takes to be a Champion!.jpg">
     <source src="../assets/What it takes to be a Champion! (2).mp4" type="video/mp4">
-</video>
+</video> -->
 
 
 
@@ -44,11 +53,21 @@
     .card:hover {
         transform: scale(1.07);
         filter: grayscale(100%);
-        box-shadow: 0 19px 38px turquoise, 0 15px 12px rgba(0, 0, 0, 0.22);
+        /* box-shadow: 0 19px 38px turquoise, 0 15px 12px rgba(0, 0, 0, 0.22); */
     }
 
     .readmore {
         position: relative;
+        transition: all .3s ease;
+        font-weight: 200;
+
+
+
+    }
+
+    .readmore:hover {
+        color: turquoise;
+        font-size: 110%;
 
     }
 
@@ -61,7 +80,7 @@
     .Underline {
         border-top: 3px solid grey;
         width: 13vw;
-        margin-bottom: 10vh;
+        margin-bottom: 8%;
 
     }
 
@@ -71,6 +90,16 @@
 
     h5 {
         color: turquoise;
+    }
+
+    p a {
+        color: black;
+        text-decoration: none;
+    }
+
+    #arrowRight {
+        position: relative;
+        margin-top: 10px;
     }
 </style>
 
@@ -91,7 +120,9 @@
                         athletesThe Olympic Games ...
 
                     </p>
-                    <button class=" readmore btn btn-secondary" type="button">Read more</button>
+                    <div class="readmore">
+                        <p><a href="">Read more <i class="bi bi-arrow-right " id="arrowRight"></i></a></p>
+                    </div>
                 </div>
 
             </div>
@@ -106,7 +137,9 @@
                         performance analytics partner...
                     </p>
 
-                    <button class=" readmore btn btn-secondary " type="button">Read more</button>
+                    <div class="readmore">
+                        <p><a href="">Read more <i class="bi bi-arrow-right " id="arrowRight"></i></a></p>
+                    </div>
 
                 </div>
             </div>
@@ -124,7 +157,9 @@
 
                     </p>
 
-                    <button class="readmore btn btn-secondary " type="button">Read more</button>
+                    <div class="readmore">
+                        <p><a href="">Read more <i class="bi bi-arrow-right " id="arrowRight"></i></a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,9 +179,10 @@
 
 
 <style>
-     #whyAnalytics-component{
-         margin-top: 8%;
-     }
+    #whyAnalytics-component {
+        margin-top: 150px;
+    }
+
     #whyAnalytics-container {
         overflow: hidden;
         background-image: url('./assets/expertBG.jpg');
@@ -169,20 +205,16 @@
 
     }
 
-    h6 {
-        max-width: 800px;
-    }
-
-
     #whyAnalytics-container-body {
         margin-top: 50px;
-        max-width: 70%;
+        max-width: 80%;
         border-top: 2px solid turquoise;
         border-bottom: 2px solid turquoise;
         margin-bottom: 20px;
     }
-    #whyAnalytics-container-body-heading{
-        font-family: 'Oswald', sans-serif;
+
+    #whyAnalytics-container-body-heading {
+        /* font-family: 'Oswald', sans-serif; */
     }
 
     #Absolute {
@@ -200,54 +232,63 @@
     #whyAnalytics-container-overImage {
         background-color: rgba(0, 0, 0, 0.384);
     }
+
+    #increaseSize {
+        font-size: large;
+    }
 </style>
 <div id="whyAnalytics-component" class="text-center">
-    <h2 id="whyAnalytics-heading" class="subHead text-center m-5">
-        <b class="text-secondary">Why STUPA Sport Analytics?</b>
-    </h2>
+
 </div>
-<div id="whyAnalytics-container" class="container">
-        <div id="whyAnalytics-container-overImage" class="overImage pb-5">
-           
-                <div id="whyAnalytics-container-header" class="text-center d-block mx-auto ml-auto pt-5">
-                    <img id="whyAnalytics-container-header-image" class="img-responsive" src="./assets/stupalogo.png" alt="">
 
-                </div>
+<div id="whyAnalytics-container" class="container-fluid">
+    <div id="whyAnalytics-container-overImage" class="overImage pb-5">
+        <div id="topheading">
+            <h2 id="whyAnalytics-heading" class="subHead text-center  pt-5 pb-2">
+                <b style="color: turquoise;">Why STUPA Sport Analytics?</b>
+            </h2>
+            <div id="whyAnalytics-container-header" class="text-center d-block mx-auto ml-auto">
+                <img id="whyAnalytics-container-header-image" class="img-responsive" src="./assets/stupalogo.png"
+                    alt="">
 
-                <div id="whyAnalytics-container-body" class="pt-3 pb-2 d-block mx-auto ml-auto" >
-
-                    <div class="text-center p-5 pb-2 pt-3" style="color: white;">
-                        <h5 id="whyAnalytics-container-body-heading" class="pb-4 d-block  mx-auto"  style="color: white;">Stupa Sports analysis
-                            help coaches to monitor and improve the
-                            performance of their players and teams.
-                            Stupa demonstrates your strengths and weaknesses. Our purpose is to find key analysis
-                            points.
-                        </h5>
-                        <p>
-                            Players & Coaches Demand more Data, Faster with less effort! – That’s why we launched
-                            STUPA, to
-                            save your time. The level of competition and the importance of data-driven decisions are
-                            higher
-                            than ever. The burden of this on coaches is real and has pushed us to evolve the role.
-                            Stupa
-                            Sports Analysis plays an important role in realizing goals and producing long term
-                            results –
-                            that’s why professional coaches rely on it!
-
-
-                        </p><br>
-                        <p>
-                            Reports generated from Stupa sports analytics can be used to understand the opposing
-                            opponent’s
-                            game plans and strategies. If you understand your opposition’s strengths you can put
-                            effective
-                            strategies, if you understand their weaknesses you can coach your player accordingly.
-
-                        </p>
-                    </div>
-                </div>
-        
+            </div>
         </div>
+
+        <div id="whyAnalytics-container-body" class="pt-3 pb-2 d-block mx-auto ml-auto">
+
+            <div class="text-center p-5 pb-2 pt-3" style="color: white;" data-aos="zoom-in" data-aos-duration="2200">
+                <h5 id="whyAnalytics-container-body-heading" class="pb-4 d-block  mx-auto" style="color: white;">Stupa
+                    Sports analysis
+                    help coaches to monitor and improve the
+                    performance of their players and teams.
+                    Stupa demonstrates your strengths and weaknesses. Our purpose is to find key analysis
+                    points.
+                </h5>
+                <p id="increaseSize">
+                    Players & Coaches Demand more Data, Faster with less effort! – That’s why we launched
+                    STUPA, to
+                    save your time. The level of competition and the importance of data-driven decisions are
+                    higher
+                    than ever. The burden of this on coaches is real and has pushed us to evolve the role.
+                    Stupa
+                    Sports Analysis plays an important role in realizing goals and producing long term
+                    results –
+                    that’s why professional coaches rely on it!
+
+
+                </p><br>
+                <p id="increaseSize">
+                    Reports generated from Stupa sports analytics can be used to understand the opposing
+                    opponent’s
+                    game plans and strategies. If you understand your opposition’s strengths you can put
+                    effective
+                    strategies, if you understand their weaknesses you can coach your player accordingly.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
@@ -260,8 +301,7 @@
 
 <style>
     #stupaUserRankedP-component {
-        margin-top:8%;
-        margin-bottom: 8%;
+        margin-top: 150px;
     }
 
     .card {
@@ -286,9 +326,6 @@
         overflow: hidden;
     }
 
-    .owl-carousel-o-slider {
-        margin-bottom: 10vh;
-    }
 </style>
 
 <div id="stupaUserRankedP-component" class="container">
@@ -414,7 +451,7 @@
 
 <style>
     #services-component {
-        margin-top: 8%;
+        margin-top: 150px;
     }
 
     .slides {
@@ -556,8 +593,8 @@
 
 <style>
     #getFree-component {
-        margin-top: 8%;
-        margin-bottom: 10%;
+        margin-top: 150px;
+        margin-bottom: 180px;
         width: 100%;
 
 
@@ -610,7 +647,7 @@
     #rowFull {}
 </style>
 
-<div id="getFree-component" >
+<div id="getFree-component">
     <div id="getFree-component-overImage" class="overImage">
     </div>
 
@@ -637,7 +674,7 @@
 
 <style>
     #container-8 {
-        margin-top: 8%;
+        margin-top: 150px;
     }
 
     .clientHeader {
@@ -647,7 +684,7 @@
 <div class="container" id="container-8">
     <div class="clientSection">
         <div class="subHead">
-            <h1 class="text-center"><b>Our Clients</b></h1>
+            <h1 class="text-center text-secondary"><b>Our Clients</b></h1>
         </div>
 
         <section class="owl-carousel-o-slider-4 p-3">
@@ -680,3 +717,194 @@
     </div>
 
 </div>
+
+
+
+
+<!-- recommmed by pros(recommedPros-component) -->
+
+
+
+<style>
+ 
+
+    #FirstHeading {
+        font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .imageLogo {
+        border-radius: 50%;
+
+    }
+#fluidContainer  {
+        margin-top: 150px;
+        /* overflow: hidden; */
+        color: rgb(161, 157, 157);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        /* background-color: black; */
+        background-image: url('./assets/Four cordinates table.png');
+        background-position: center;
+
+    }
+
+    .typewriter {
+        white-space: nowrap;
+    }
+
+    .typewriter p {
+        color: #fff;
+        overflow: hidden;
+        color: black;
+        /* white-space: nowrap; */
+
+        margin: 0 auto;
+        margin-top: -20px;
+        margin-bottom: 5vh;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(80, end), blink-caret .20s step-end infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+    .imgLogo{
+        overflow: hidden;
+    }
+
+    .imgLogo img {
+        text-align: center;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+        max-width: 200px;
+        height: 200px !important;
+        margin-bottom: 30px;
+    }
+
+    .infobypros p{
+        width: 60vw;
+        display: block;
+        margin-left: auto;
+        font-family: 'Dosis', sans-serif;
+        margin-right: auto;
+    }
+    .flexbox{
+        /* width: 800px; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .bg_gradient {
+        background-color: rgba(0, 0, 0, 0.603);
+    }
+</style>
+<!-- <div class="container" id="container-about-1"> -->
+
+<div class="container-fluid" id="fluidContainer" >
+    <div class="bg_gradient">
+        <div class="Pros-heading">
+            <h1 class="text-center pt-5" data-aos="fade-up" data-aos-duration="1000" id="FirstHeading"><b
+                    class="subHead" style="color: turquoise;">Recoginition By Pro's</b></h1>
+        </div>
+        <section class="owl-carousel-o-slider-3 p-5">
+            <owl-carousel-o [options]="customOptions4">
+                <ng-template carouselSlide>
+
+
+                    <div class="flexbox  " id="flexbox2">
+                        <div class="row p-3 text-center d-block mx-auto ml-auto">
+                            <div class="imgLogo d-block mx-auto ml-auto img-fluid" id="imgLogo1">
+                                <img src="./assets/manavMasking.jpg" alt="avatar" id="pro-1">
+
+                            </div>
+                            <div class="infobypros mt-2">
+                                <p>
+                                    <fa-icon style="bottom: 10px;margin-right: 10px; position: relative;"
+                                        [icon]="faQuoteleft"> </fa-icon>Stupa app realize me that my left foot remained less active during the play. I trained it and it,s much quicker now. <fa-icon
+                                        style="top: 15px; position: relative; margin-left: 10px;" [icon]="faQuoteRight">
+                                    </fa-icon>
+                                </p>
+                            </div>
+                            <div class="superhead mt-1 text-center">
+                                <h4>Manav Thakkar</h4>
+                                <h6 class="">World Rank- 1(youth)</h6>
+                                <h6 class="">India</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+
+                    <div class="flexbox mt-2 " id="flexbox2">
+                        <div class="row p-3 text-center d-block mx-auto ml-auto">
+                            <div class="imgLogo d-block mx-auto ml-auto img-fluid" id="imgLogo1">
+                                <img src="./assets/i01_adriana.jpg" alt="avatar" id="pro-2">
+
+                            </div>
+                            <div class="infobypros mt-2">
+                                <p>
+                                    <fa-icon style="bottom: 10px;margin-right: 10px; position: relative;"
+                                        [icon]="faQuoteleft"> </fa-icon>I've seen a Phenomenal changes in my game since I've started using the Stupa app    <fa-icon
+                                        style="top: 15px; position: relative; margin-left: 10px;" [icon]="faQuoteRight">
+                                    </fa-icon>
+                                </p>
+                            </div>
+                            <div class="superhead mt-1 text-center">
+                                <h4>Adriana Diaz</h4>
+                                <h6 class="">World Rank- 16</h6>
+                                <h6 class="">Puerto Rico</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+
+                    <div class="flexbox mt-2 " id="flexbox2">
+                        <div class="row p-3 text-center d-block mx-auto ml-auto">
+                            <div class="imgLogo d-block mx-auto ml-auto img-fluid" id="imgLogo1">
+                                <img src="./assets/i01_kanak.jpg" alt="avatar" id="pro-3">
+
+                            </div>
+                           
+                            <div class="infobypros mt-2">
+                                <p>
+                                    <fa-icon style="bottom: 10px;margin-right: 10px; position: relative;"
+                                        [icon]="faQuoteleft"> </fa-icon>My service, my stategy, building capacity and even my footwork had seen a rapid improvement because of stupa<fa-icon
+                                        style="top: 15px; position: relative; margin-left: 10px;" [icon]="faQuoteRight">
+                                    </fa-icon>
+                                </p>
+                            </div>
+                            <div class="superhead mt-1 text-center">
+                                <h4>Kanak Jha</h4>
+                                <h6 class="">World Rank- 28</h6>
+                                <h6 class="">USA</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </section>
+    </div>
+</div>
+
+
+<!-- other -->
+<style>
+    #otherContainer{
+        margin-top: 8%;
+    }
+</style>
+<div class="container" id="otherContainer"></div>

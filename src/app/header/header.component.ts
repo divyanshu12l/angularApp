@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import { MatDialog } from '@angular/material/dialog';
 import { DownloadPopupComponent } from '../download-popup/download-popup.component';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 // import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-header',
@@ -10,6 +12,8 @@ import { DownloadPopupComponent } from '../download-popup/download-popup.compone
 })
 export class HeaderComponent implements OnInit {
   OnScoll= false;
+  faQuoteleft = faQuoteLeft
+  faQuoteRight = faQuoteRight
   userData:any = {};
   email = 'divyanshulingwal35@gmail.com'
   password = "div12345@@"
@@ -50,7 +54,7 @@ export class HeaderComponent implements OnInit {
     pullDrag: true,
     autoplay:true,
     autoplayTimeout:2200,
-    dots: true,
+    dots: false,
     navSpeed: 1000,
     margin:10,
     navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>' ],
@@ -70,6 +74,7 @@ export class HeaderComponent implements OnInit {
     },
     nav: true
   }
+  
   customOptions2: any = {
     loop: true,
     mouseDrag: true,
@@ -79,7 +84,8 @@ export class HeaderComponent implements OnInit {
     autoplayTimeout:5000,
         autoplayHoverPause:true,
     dots: true,
-    navSpeed: 100,
+    smartSpeed: 500,
+    navSpeed: 800,
     navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
     responsive: {
       0: {
@@ -97,6 +103,10 @@ export class HeaderComponent implements OnInit {
     },
     nav: true
   }
+
+
+
+
   customOptions3: any = {
     loop: true,
     mouseDrag: true,
@@ -137,5 +147,36 @@ export class HeaderComponent implements OnInit {
     {id: 6, img: "https://dummyimage.com/350x150/5a2b7a/fff"},
     {id: 6, img: "https://dummyimage.com/350x150/4a2b7a/fff"}
   ];
+
+  
+
+  customOptions4: any = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    autoplay:true,
+    autoplayHoverPause:true,
+    autoplayTimeout:4000,
+    navSpeed: 800,
+    smartSpeed:500,
+    navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: true
+  }
 
 }

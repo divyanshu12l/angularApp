@@ -16,7 +16,9 @@ import { Pan6Component } from './pan6/pan6.component';
 import { Pan7Component } from './pan7/pan7.component';
 import { Pan8Component } from './pan8/pan8.component';
 import { Pan9Component } from './pan9/pan9.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { Pan10Component } from './pan10/pan10.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -73,6 +75,7 @@ import { DownloadPopupComponent } from './download-popup/download-popup.componen
     FormsModule,
     LoadingBarModule,
     LoadingBarRouterModule,
+    FontAwesomeModule,
     MatDialogModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyDjngAJCeHZT7QPmfmXWtgKRdC0baTyPiY'	

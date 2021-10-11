@@ -12,7 +12,7 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  customOptions: any = {
+  customOptions4: any = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
