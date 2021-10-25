@@ -1,11 +1,12 @@
 <style>
   .header_change{
-    background-image: url('./assets/founderBG.jpg');
+    /* background-image: url('./assets/founderBG.jpg'); */
 background-size: cover;
 background-attachment: fixed;
-filter: grayscale(100%);
+/* filter: grayscale(100%); */
 background-repeat: no-repeat;
-border-bottom: 2px solid turquoise;
+background-color: rgba(0, 0, 0, 0.801);
+/* border-bottom: 2px solid turquoise; */
 background-position: center;
 
     /* height: 12%; */
@@ -69,15 +70,22 @@ text-transform: uppercase;
 }
 .nav-link{
   color: white;
+
 }
+.nav-link:hover{
+  color: turquoise;
+  /* box-shadow: 0 3px 6px rgb(64, 179, 224), 0 3px 6px rgb(64, 160, 224); */
+  text-shadow:  0 3px 6px turquoise, 0 3px 6px turquoise;
+}
+.navbar-toggler{}
 </style>
 <!-- [class.normal] -->
 
 <ngx-loading-bar [height]="'5px'" [color]="'turquoise'" [includeSpinner]="false"></ngx-loading-bar>
-<nav class="navbar fixed-top navbar-expand-lg navbar pt-4 pb-4"  [class.header_change]="header_variable"   data-aos="fade-down" data-aos-duration="1000" >
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-4 pb-4"  [class.header_change]="header_variable"   data-aos="fade-down" data-aos-duration="1000" >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img class="img-fluid" width="60" src="./assets/stupalogo.png">
+    <a class="navbar-brand" href="/">
+      <img class="img-fluid" width="100" src="./assets/stupalogo.png">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -88,13 +96,16 @@ text-transform: uppercase;
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/About" routerLinkActive="active" href="#">About Us</a>
+          <a class="nav-link ms-4"  routerLink="/About" routerLinkActive="active" href="#">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/News" routerLinkActive="active" href="#">News</a>
+          <a class="nav-link ms-4"  routerLink="/News" routerLinkActive="active" href="#">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#" routerLink="/Contact" routerLinkActive="active" tabindex="-1" aria-disabled="true">Contact Us</a>
+          <a class="nav-link ms-4" href="#" routerLink="/Contact" routerLinkActive="active" tabindex="-1" aria-disabled="true">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-4" href="#" routerLink="/services" routerLinkActive="active" tabindex="-1" aria-disabled="true">Services</a>
         </li>
       </ul>
         <button [class.mybot]= "header_variable" class="btn btn-outline-success" type="submit">Search</button>

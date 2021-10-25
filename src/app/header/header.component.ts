@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import { MatDialog } from '@angular/material/dialog';
 import { DownloadPopupComponent } from '../download-popup/download-popup.component';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-// import { OwlOptions } from 'ngx-owl-carousel-o';
+import 'animate.css';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,13 +13,26 @@ import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent implements OnInit {
   OnScoll= false;
+  
+  
   faQuoteleft = faQuoteLeft
   faQuoteRight = faQuoteRight
   userData:any = {};
+  showSidebox  = false
   email = 'divyanshulingwal35@gmail.com'
   password = "div12345@@"
 
   constructor(public dialog: MatDialog) { }
+  header_variable = true;
+    @HostListener("document:scroll")
+    scrollfunction(){
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)
+      this.showSidebox=true;
+      else{
+        this.showSidebox = false
+      }
+    
+    }
 
   openModel(): void {
     const dialogRef = this.dialog.open(DownloadPopupComponent, {
@@ -38,6 +52,8 @@ export class HeaderComponent implements OnInit {
     condition = true;
   }
   ngOnInit(): void {
+    
+              
   }
   Input(data:NgForm){
     this.userData = data.getFormGroup
@@ -178,5 +194,6 @@ export class HeaderComponent implements OnInit {
     },
     nav: true
   }
+
 
 }

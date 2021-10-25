@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import {MatDialogModule} from '@angular/material/dialog'
+import {MatDialogModule} from '@angular/material/dialog';
 // import { OwlOptions } from 'ngx-owl-carousel-o';
 import {BrowserModule} from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +32,7 @@ import { CreativeMediaComponent } from './creative-media/creative-media.componen
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { DownloadPopupComponent } from './download-popup/download-popup.component';
+import { ServiceComponent } from './service/service.component';
 
 // import '@types/googlemaps';
 
@@ -64,6 +65,7 @@ import { DownloadPopupComponent } from './download-popup/download-popup.componen
     AthleteProfilingComponent,
     CreativeMediaComponent,
     DownloadPopupComponent,
+    ServiceComponent,
 
     
   ],

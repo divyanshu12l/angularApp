@@ -1,0 +1,136 @@
+<style>
+    #services-component {
+        margin-top: 150px;
+    }
+
+    .slides {
+        max-width: 400px;
+        height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+
+    .servName {
+        color: turquoise;
+    }
+</style>
+
+<div id="services-component" class="container">
+    <div id="services-component-heading">
+        <h1 class="subHead text-center"><b class="servName text-secondary">Services We Provide </b></h1>
+    </div>
+    <div class="services-component-slider">
+        <section class="owl-carousel-o-slider-3 mt-5 p-4">
+            <owl-carousel-o [options]="customOptions2">
+                <ng-template carouselSlide>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="slide-1" class="slides img-responsive">
+                                <img class="img-fluid" width="100" src="./assets/expertservice.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="count">
+                                <h1 class="text-start">No. 1</h1>
+                            </div>
+                            <div class="subheading">
+                                <h2 class=" subHead text-start "><b class="servName">EXPERT ANALYSIS</b></h2>
+                            </div>
+                            <div class="info">
+                                <p class="text-start">
+                                    Match analysis is a process of collecting the data of your Table tennis match
+                                    where
+                                    you’d be able to view your errors, winners, ball placement, effective serves and
+                                    Receives, effective strokes and many more including video clippings that’ll help
+                                    you
+                                    in understanding the point in a better way.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="slide-2" class="slides img-responsive">
+                                <img class="img-fluid" width="100" src="./assets/realtimeservice.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="count">
+                                <h1 class="text-start">No. 2</h1>
+                            </div>
+                            <div class="subheading">
+                                <h2 class="subHead text-start"><b class="servName">REAL-TIME ANALYSIS</b></h2>
+                            </div>
+                            <div class="info">
+                                <p class="text-start">
+                                    STUPA provides you with an Artificial
+                                    Intelligence Table Tennis Analytics Solution
+                                    that uses a mobile camera for performing real
+                                    time analysis of the game and gives you super-fast
+                                    stats like Ball Speed, Heat Map etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="slide-3" class="slides img-responsive">
+                                <img class="img-fluid" width="100" src="./assets/practiseservice.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="count">
+                                <h1 class="text-start">No. 3</h1>
+                            </div>
+                            <div class="subheading">
+                                <h2 class="subHead text-start"><b class="servName">PRACTICE ANALYSIS</b></h2>
+                            </div>
+                            <div class="info">
+                                <p class="text-start">
+                                    STUPA’s Artificial Intelligence
+                                    also lets you analyze you training
+                                    sessions. Just your mobile camera
+                                    and track your performance session by session.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="slide-4" class="slides img-responsive">
+                                <img class="img-fluid" width="100" src="./assets/athleteservice.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="count">
+                                <h1 class="text-start">No. 4</h1>
+                            </div>
+                            <div class="subheading">
+                                <h2 class="subHead text-start"><b class="servName">ATHLETE PROFILING</b></h2>
+                            </div>
+                            <div class="info">
+                                <p class="text-start">
+                                    The yearly performance of the player is created, mentioning the no of matches
+                                    played
+                                    by him/her. Matches won and lost along with all the observations and data with
+                                    Playing patterns, Enlightening Facts and Trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+
+        </section>
+    </div>
+</div>
+
+
+

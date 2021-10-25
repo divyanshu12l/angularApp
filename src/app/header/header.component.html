@@ -1,21 +1,98 @@
 <!-- header hom-1 -->
 <style>
-    .header img{
+    .header {
+        background-image: url('./assets/Four cordinates table.png');
         width: 100%;
         height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
-    /* video {
+
+    .downarrow {
+        position: absolute;
+        top: 88%;
+        color: white;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 150%;
+        display:inline-block;
+        text-align: center;
+        animation: arrowDown 0.9s ease infinite;
+    }
+
+    @keyframes arrowDown {
+        0% {
+            top: 88%;
+        }
+
+        50% {
+            top: 90%;
+        }
+
+        100% {
+            top: 88%;
+        }
+
+    }
+    #MainHeader{
+        position:absolute;
+        top: 50%; 
+        display: flex;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display:inline-block;
+        text-align: center;
+    }
+ /* video {
         object-fit: cover;
         height: auto;
         width: 100%;
         top: 0;
         left: 0;
     } */
+
+    .animate__animated.animate__zoomInDown{
+        --animate-duration: 2s;
+    }
+    .bggradient{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.534);
+    }
+    .your{
+        --animate-duration: 1.5s;
+    }
+    .opponent{
+        --animate-duration: 2s;
+    }
+    .stategies{
+        --animate-duration: 2.5s;
+    }
 </style>
 <div class="contain">
     <div class="header">
-        <img src="./assets/Screenshot (68).png" alt="">
+        <div class="bggradient"></div>
+
+        <!-- <img src="./assets/Screenshot (69).png" alt=""> -->
     </div>
+    <div class="downarrow">
+       
+            <p class="text-center" style="color: white;">Analyse Your Match Now</p>
+        <div class="text-center" style="margin-top: -10px;"><b><i class="bi bi-chevron-down"></i></b></div>
+    </div>
+</div>
+<div class="d-block ml-auto mx-auto" id="MainHeader">
+    <img class="animate__animated animate__zoomInDown"  src="./assets/stupalogo.png" alt="" width="200">
+    <div class="text-center" style="display: flex; color: turquoise;" >
+        <div class="crack animate__animated animate__fadeInDown"><h6> Crack </h6> </div>
+        <div class="your ms-2 animate__animated animate__fadeInDown"><h6> Your </h6></div>
+        <div class="opponent ms-2 animate__animated animate__fadeInDown"><h6> Opponent </h6></div>
+        <div class="stategies ms-2 animate__animated animate__fadeInDown"><h6> Stategies </h6></div>
+</div>
+        <!-- <h1 class="animate__animated animate__fadeInLeft  app" style="color: turquoise ;font-family: 'Saira', sans-serif;"><b>Crack Your Opponent Stategies</b></h1></div> -->
+    <!-- <h1 id="MainHeader" ><b>Stupa</b> </h1> -->
 </div>
 
 <!-- <video id="background-video" autoplay loop muted poster="./assets/What it takes to be a Champion!.jpg">
@@ -38,7 +115,7 @@
         margin-top: 8%;
     }
 
-    .card {
+    .card1 {
         width: 100%;
         /* background-color: rgba(218, 218, 218, 0.699); */
         box-shadow: 0 0 30px rgb(214 215 216 / 35%);
@@ -50,7 +127,7 @@
 
     }
 
-    .card:hover {
+    .card1:hover {
         transform: scale(1.07);
         filter: grayscale(100%);
         /* box-shadow: 0 19px 38px turquoise, 0 15px 12px rgba(0, 0, 0, 0.22); */
@@ -110,7 +187,7 @@
     <span class="Underline d-block mx-auto"></span>
     <div id="newsContainer-box" class="row">
         <div id="newsContainer-body-box-1" class="col-sm-4">
-            <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card1 card" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./assets/new1 (2).jpg">
                 <div class="text-start p-2 card-text">
                     <h5>CNBC in conversation with Megha Gambhir</h5>
@@ -128,7 +205,7 @@
             </div>
         </div>
         <div id="newsContainer-body-box-2" class="col-sm-4">
-            <div class="card" data-aos="fade-up" data-aos-duration="1300">
+            <div class="card1 card" data-aos="fade-up" data-aos-duration="1300">
                 <img src="./assets/new2.jpg">
                 <div class="text-start p-2 card-text">
                     <h5>Sweden partnered with Stupa</h5>
@@ -145,7 +222,7 @@
             </div>
         </div>
         <div id="newsContainer-body-box-3" class="col-sm-4">
-            <div class="card" data-aos="fade-up" data-aos-duration="1600">
+            <div class="card1 card" data-aos="fade-up" data-aos-duration="1600">
                 <img src="./assets/new3.jpg">
                 <div class="text-start p-2 card-text">
                     <h5>Success Stories: Her Story Her Way</h5>
@@ -167,6 +244,155 @@
     </div>
 </div>
 
+
+
+<style>
+#service{
+    width: 40%;
+    background-image: url('./assets/bgcircle2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-left:before {
+	right: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
+}
+.buttonAnimate{
+    	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+.slide{
+
+    transition: all 0.8s ease;
+    animation: buttonAni 0.9s 1;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    border: 2px solid black;
+    font-size: x-large;
+
+}
+
+@keyframes buttonAni {
+    from{}
+    to{}
+}
+.slide:hover{
+    color: white;
+border: 4px solid turquoise;
+    background-color: black;
+}
+</style>
+
+<div class="serviceComponetImage">
+    <div class="text-center pt-5">
+    <h1 class="d-block mx-auto ml-auto p-5" id="service"><b style="color: turquoise;">Want to Know What Services We Provides to Users <i class="bi bi-question-lg"></i></b></h1>
+    <div class="buttonAnimate" >
+   <a href="/"  routerLink="/services" routerLinkActive="active"><button class="slide btn mt-5 p-3"  style="position: relative;" type="button">Click here </button></a>
+    </div>
+
+</div>
+
+</div>
+<div class="overbut"></div>
+
+<!-- component-5 (getFree-component) -->
+
+
+
+
+<style>
+    #getFree-component {
+        margin-top: 150px;
+        margin-bottom: 180px;
+        width: 100%;
+
+
+    }
+
+    #getFree-component-overImage {
+        position: relative;
+        width: auto;
+        overflow: hidden;
+        height: 600px;
+        background-image: url('./assets/MATCH ANALYSIS (BG PHOTO).jpg');
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .contheading2 {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background-color: rgba(0, 0, 0, 0.644);
+        margin-top: -600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #btntrial {
+        background-color: rgb(19, 228, 207);
+        color: white;
+        border-radius: 50px;
+        margin-top: 30%;
+        padding: 10px;
+        min-width: 40%;
+        font-size: larger;
+        min-height: 12%;
+    }
+
+    #sideimg {
+        filter: drop-shadow(10px 10px 10px rgba(8, 8, 8, 0.795));
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<div id="getFree-component">
+    <div id="getFree-component-overImage" class="overImage">
+    </div>
+
+    <div class="contheading2 ">
+
+        <h1 class="subHead text-center pt-4">
+            <b style="color: white">Get your First <br><b style="color: turquoise;">Match Analysis Free</b> </b>
+        </h1>
+        <div class="container">
+            <div class="row" id="rowFull">
+                <div class="col-lg-5 text-center"><button id="btntrial" class="btn btn p-2 ps-3 pe-3" type="button"
+                        (click)="openModel()"><b>Join For Free <i class="bi bi-patch-check"></i></b>
+                    </button></div>
+                <div class="col-lg-7 text-end" id="responsiveImg">
+                    <img id="sideimg" class="img-responsive img-rounded" src="./assets/bgselect.jpg" width="650" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -213,9 +439,6 @@
         margin-bottom: 20px;
     }
 
-    #whyAnalytics-container-body-heading {
-        /* font-family: 'Oswald', sans-serif; */
-    }
 
     #Absolute {
         display: block;
@@ -256,7 +479,7 @@
 
         <div id="whyAnalytics-container-body" class="pt-3 pb-2 d-block mx-auto ml-auto">
 
-            <div class="text-center p-5 pb-2 pt-3" style="color: white;" data-aos="zoom-in" data-aos-duration="2200">
+            <div class="text-center p-5 pb-2 pt-3" style="color: white;" data-aos="zoom-in" data-aos-duration="1500">
                 <h5 id="whyAnalytics-container-body-heading" class="pb-4 d-block  mx-auto" style="color: white;">Stupa
                     Sports analysis
                     help coaches to monitor and improve the
@@ -325,7 +548,23 @@
         height: 180px;
         overflow: hidden;
     }
+    .card2 {
+        width: 100%;
+        /* background-color: rgba(218, 218, 218, 0.699); */
+        box-shadow: 0 0 30px rgb(214 215 216 / 35%);
+        height: auto;
+        overflow: hidden;
+        /* border: 1px solid turquoise; */
+        border: none;
+        cursor: pointer;
 
+    }
+
+    .card2:hover {
+        transform: scale(1.07);
+        filter: grayscale(100%);
+        /* box-shadow: 0 19px 38px turquoise, 0 15px 12px rgba(0, 0, 0, 0.22); */
+    }
 </style>
 
 <div id="stupaUserRankedP-component" class="container">
@@ -339,7 +578,7 @@
         <owl-carousel-o [options]="customOptions">
             <ng-template carouselSlide>
 
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/manav.jpg" width="100" class="card-img-top">
                     </div>
@@ -352,7 +591,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img class="card-img-top" src="./assets/kanak.jpg" width=100>
                     </div>
@@ -364,7 +603,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/adriana.jpg" width="100" class=" card-img-top">
                     </div>
@@ -377,7 +616,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/payas.jpg" width="100">
                     </div>
@@ -389,7 +628,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class= "card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/helmy.jpg" width="100">
                     </div>
@@ -401,7 +640,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/brian.jpg" width="100">
                     </div>
@@ -413,7 +652,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/duda.jpg" width="100">
                     </div>
@@ -425,7 +664,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card m-3 pb-3">
+                <div class="card2 card m-3 pb-3">
                     <div class="imgContainer">
                         <img src="./assets/maliana.jpg" width="100">
                     </div>
@@ -586,89 +825,6 @@
 
 
 
-<!-- component-5 (getFree-component) -->
-
-
-
-
-<style>
-    #getFree-component {
-        margin-top: 150px;
-        margin-bottom: 180px;
-        width: 100%;
-
-
-    }
-
-    #getFree-component-overImage {
-        position: relative;
-        width: auto;
-        overflow: hidden;
-        height: 600px;
-        background-image: url('./assets/MATCH ANALYSIS (BG PHOTO).jpg');
-        filter: blur(3px);
-        -webkit-filter: blur(3px);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
-
-    .contheading2 {
-        position: absolute;
-        width: 100%;
-        height: 600px;
-        background-color: rgba(0, 0, 0, 0.644);
-        margin-top: -600px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    #btntrial {
-        background-color: rgb(19, 228, 207);
-        color: white;
-        border-radius: 50px;
-        margin-top: 30%;
-        padding: 10px;
-        min-width: 40%;
-        font-size: larger;
-        min-height: 12%;
-    }
-
-    #sideimg {
-        filter: drop-shadow(10px 10px 10px rgba(8, 8, 8, 0.795));
-        width: 100%;
-        height: auto;
-    }
-
-
-    #rowFull {}
-</style>
-
-<div id="getFree-component">
-    <div id="getFree-component-overImage" class="overImage">
-    </div>
-
-    <div class="contheading2 ">
-
-        <h1 class="subHead text-center pt-4">
-            <b style="color: white">Get your First <br><b style="color: turquoise;">Match Analysis Free</b> </b>
-        </h1>
-        <div class="container">
-            <div class="row" id="rowFull">
-                <div class="col-lg-5 text-center"><button id="btntrial" class="btn btn p-2 ps-3 pe-3" type="button"
-                        (click)="openModel()"><b>Join For Free <i class="bi bi-patch-check"></i></b>
-                    </button></div>
-                <div class="col-lg-7 text-end" id="responsiveImg">
-                    <img id="sideimg" class="img-responsive img-rounded" src="./assets/bgselect.jpg" width="650" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <!-- client section -->
 
@@ -726,8 +882,6 @@
 
 
 <style>
- 
-
     #FirstHeading {
         font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -736,7 +890,8 @@
         border-radius: 50%;
 
     }
-#fluidContainer  {
+
+    #fluidContainer {
         margin-top: 150px;
         /* overflow: hidden; */
         color: rgb(161, 157, 157);
@@ -775,7 +930,8 @@
             width: 100%
         }
     }
-    .imgLogo{
+
+    .imgLogo {
         overflow: hidden;
     }
 
@@ -792,20 +948,21 @@
         margin-bottom: 30px;
     }
 
-    .infobypros p{
+    .infobypros p {
         width: 60vw;
         display: block;
         margin-left: auto;
         font-family: 'Dosis', sans-serif;
         margin-right: auto;
     }
-    .flexbox{
+
+    .flexbox {
         /* width: 800px; */
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
 
     .bg_gradient {
         background-color: rgba(0, 0, 0, 0.603);
@@ -813,7 +970,7 @@
 </style>
 <!-- <div class="container" id="container-about-1"> -->
 
-<div class="container-fluid" id="fluidContainer" >
+<div class="container-fluid" id="fluidContainer">
     <div class="bg_gradient">
         <div class="Pros-heading">
             <h1 class="text-center pt-5" data-aos="fade-up" data-aos-duration="1000" id="FirstHeading"><b
@@ -833,7 +990,8 @@
                             <div class="infobypros mt-2">
                                 <p>
                                     <fa-icon style="bottom: 10px;margin-right: 10px; position: relative;"
-                                        [icon]="faQuoteleft"> </fa-icon>Stupa app realize me that my left foot remained less active during the play. I trained it and it,s much quicker now. <fa-icon
+                                        [icon]="faQuoteleft"> </fa-icon>Stupa app realize me that my left foot remained
+                                    less active during the play. I trained it and it,s much quicker now. <fa-icon
                                         style="top: 15px; position: relative; margin-left: 10px;" [icon]="faQuoteRight">
                                     </fa-icon>
                                 </p>
@@ -857,7 +1015,8 @@
                             <div class="infobypros mt-2">
                                 <p>
                                     <fa-icon style="bottom: 10px;margin-right: 10px; position: relative;"
-                                        [icon]="faQuoteleft"> </fa-icon>I've seen a Phenomenal changes in my game since I've started using the Stupa app    <fa-icon
+                                        [icon]="faQuoteleft"> </fa-icon>I've seen a Phenomenal changes in my game since
+                                    I've started using the Stupa app <fa-icon
                                         style="top: 15px; position: relative; margin-left: 10px;" [icon]="faQuoteRight">
                                     </fa-icon>
                                 </p>
@@ -878,11 +1037,12 @@
                                 <img src="./assets/i01_kanak.jpg" alt="avatar" id="pro-3">
 
                             </div>
-                           
+
                             <div class="infobypros mt-2">
                                 <p>
                                     <fa-icon style="bottom: 10px;margin-right: 10px; position: relative;"
-                                        [icon]="faQuoteleft"> </fa-icon>My service, my stategy, building capacity and even my footwork had seen a rapid improvement because of stupa<fa-icon
+                                        [icon]="faQuoteleft"> </fa-icon>My service, my stategy, building capacity and
+                                    even my footwork had seen a rapid improvement because of stupa<fa-icon
                                         style="top: 15px; position: relative; margin-left: 10px;" [icon]="faQuoteRight">
                                     </fa-icon>
                                 </p>
@@ -903,8 +1063,33 @@
 
 <!-- other -->
 <style>
-    #otherContainer{
+    #otherContainer {
         margin-top: 8%;
     }
+    .showSidebox{
+        left: 80vw;
+        visibility: visible ;
+        top: 50%;
+        position: fixed;
+    }
+    .card3{
+        background-color: black;
+        color: white;
+    }
 </style>
-<div class="container" id="otherContainer"></div>
+<div class="container" id="otherContainer">
+    <div class="sidebox" [class.showSidebox]="showSidebox">
+        <div class="card3 card" style="width: 18rem;">
+            <img src="./assets/headerImage.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div>
+        <label for="formFileLg" class="form-label">Large file input example</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file">
+      </div>
+</div>

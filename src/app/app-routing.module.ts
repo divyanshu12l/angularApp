@@ -12,6 +12,7 @@ import { Pan1Component } from './pan1/pan1.component';
 import { Pan10Component } from './pan10/pan10.component';
 import { RTMatchAnalysisComponent } from './rtmatch-analysis/rtmatch-analysis.component';
 import { RTPractiseAnalysisComponent } from './rtpractise-analysis/rtpractise-analysis.component';
+import {ServiceComponent} from './service/service.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
@@ -23,7 +24,9 @@ const routes: Routes = [
   {path: 'real-time-match-analysis', component: RTMatchAnalysisComponent},
   {path: 'real-time-practise-analysis', component: RTPractiseAnalysisComponent},
   {path: 'athelete-profiling', component: AthleteProfilingComponent},
-  {path: 'broadcast-creative-media', component: CreativeMediaComponent}
+  {path: 'broadcast-creative-media', component: CreativeMediaComponent},
+  {path: 'services', component: ServiceComponent}
+
 ];
 
 
